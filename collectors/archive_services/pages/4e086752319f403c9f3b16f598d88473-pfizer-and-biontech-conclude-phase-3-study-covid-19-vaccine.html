@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app201.us.archive.org';v.server_ms=290;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=xTFGO54E" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=i68pdzR-" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine/","20201120123400","https://web.archive.org/","web","/_static/",
+	      "1605875640");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=omkqRugM" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <meta charset="utf-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"761e715901",applicationID:"32397309"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+<meta property="og:site_name" content="BioNTech"/>
+<link rel="canonical" href="https://web.archive.org/web/20201120123400/https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://web.archive.org/web/20201120123400/https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine"/>
+<meta property="og:title" content="Pfizer and BioNTech Conclude Phase 3 Study of COVID-19 Vaccine Candidate, Meeting All Primary Efficacy Endpoints | BioNTech"/>
+<meta property="og:description" content="Primary efficacy analysis demonstrates BNT162b2 to be 95% effective against COVID-19 beginning 28 days after the first dose; 170 confirmed cases of COVID-19 were evaluated, with 162 observed in the placebo group versus 8 in the vaccine group Efficacy was consistent across age, gender, race and"/>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)"/>
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="shortcut icon" href="/web/20201120123400im_/https://investors.biontech.de/sites/g/files/knoqqb50866/files/favicon.ico" type="image/vnd.microsoft.icon"/>
+<link rel="alternate" hreflang="en" href="https://web.archive.org/web/20201120123400/https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine"/>
+<link rel="alternate" hreflang="de" href="https://web.archive.org/web/20201120123400/https://investors.biontech.de/de/news-releases/news-release-details/pfizer-und-biontech-schliessen-phase-3-studie-erfolgreich-ab-0"/>
+<link rel="revision" href="https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine"/>
+
+    <title>Pfizer and BioNTech Conclude Phase 3 Study of COVID-19 Vaccine Candidate, Meeting All Primary Efficacy Endpoints | BioNTech</title>
+    <link rel="stylesheet" media="all" href="/web/20201120123400cs_/https://investors.biontech.de/sites/g/files/knoqqb50866/files/css/css_NRmgfE7PDqMPimvCjz666hBep0GsMON9xUAojqIOMJw.css"/>
+<link rel="stylesheet" media="all" href="/web/20201120123400cs_/https://investors.biontech.de/sites/g/files/knoqqb50866/files/css/css_XRovB2TpD1vseYUFrnS5enBmtd192Hn3OA83r43mqQ4.css"/>
+<link rel="stylesheet" media="print" href="/web/20201120123400cs_/https://investors.biontech.de/sites/g/files/knoqqb50866/files/css/css_qiIL-mffQUaum559wtcfFYi_iS8OG6PzZFmrLFOhtOg.css"/>
+<link rel="stylesheet" media="all" href="/web/20201120123400cs_/https://investors.biontech.de/sites/g/files/knoqqb50866/files/css/css_IB9YnILMv6E5vLwn8vvzpOLWPtmIC4dbgjdi7ld_tmU.css"/>
+<link rel="stylesheet" media="all" href="//web.archive.org/web/20201120123400cs_/https://fonts.googleapis.com/css?family=Raleway:400,600,700,800,900"/>
+<link rel="stylesheet" media="all" href="//web.archive.org/web/20201120123400cs_/https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800"/>
+<link rel="stylesheet" media="all" href="/web/20201120123400cs_/https://investors.biontech.de/sites/g/files/knoqqb50866/files/css/css_HMLp8yBe5gFRM23NG2v5nJIcIvN8mRLPECyNGX3qC1c.css"/>
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/g/files/knoqqb50866/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="/web/20201120123400js_/https://investors.biontech.de/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
+<script src="/web/20201120123400js_/https://investors.biontech.de/sites/g/files/knoqqb50866/files/js/js_Rj1bTWLEHMa9yKpwV-VfR_i9894_ptutjA98PCo2j84.js"></script>
+
+    
+  </head>
+  <body class="body-sidebars-none nir-node nir-node--type-nir-news nir-node--8771 path-node page-node-type-nir-news"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;">
+<div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="wm-ipp-inside">
+  <div style="position:relative;">
+    <div id="wm-logo" style="float:left;width:110px;padding-top:12px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="/_static/images/toolbar/wayback-toolbar-logo-100.png, /_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, /_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0" /></a>
+    </div>
+    <div class="r" style="float:right;">
+      <div id="wm-btns" style="text-align:right;height:25px;">
+                  <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="#"
+	     title="Share via My Web Archive" >
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php"
+             title="Sign In"
+             id="wm-sign-in"
+          >
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        	<a href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+	<a id="wm-tb-close" href="#close" onclick="__wm.h(event);return false;" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share">
+          <a href="/web/20201120123400/http://web.archive.org/screenshot/https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine/"
+             id="wm-screenshot"
+             title="screenshot">
+            <span class="wm-icon-screen-shot"></span>
+          </a>
+          <a href="#"
+            id="wm-video"
+            title="video">
+            <span class="iconochive-movies"></span>
+          </a>
+	<a id="wm-share-facebook" href="#" data-url="https://web.archive.org/web/20201120123400/https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine/" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+	<a id="wm-share-twitter" href="#" data-url="https://web.archive.org/web/20201120123400/https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine/" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+    </div>
+    <table class="c" style="">
+      <tbody>
+	<tr>
+	  <td class="u" colspan="2">
+	    <form target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine/" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20201120123400" /><input type="submit" value="Go" /></form>
+	  </td>
+	  <td class="n" rowspan="2" style="width:110px;">
+	    <table>
+	      <tbody>
+		<!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+		<tr class="m">
+		  <td class="b" nowrap="nowrap">Oct</td>
+		  <td class="c" id="displayMonthEl" title="You are here: 12:34:00 Nov 20, 2020">NOV</td>
+		  <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20201221002644/https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine" title="21 Dec 2020"><strong>Dec</strong></a></td>
+		</tr>
+		<!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+		<tr class="d">
+		  <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20201119121443/https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine/" title="12:14:43 Nov 19, 2020"><img src="/_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a></td>
+		  <td class="c" id="displayDayEl" style="width:34px;font-size:24px;white-space:nowrap;" title="You are here: 12:34:00 Nov 20, 2020">20</td>
+		  <td class="f" nowrap="nowrap"><a href="https://web.archive.org/web/20201121124330/https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine" title="12:43:30 Nov 21, 2020"><img src="/_static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a></td>
+		</tr>
+		<!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+		<tr class="y">
+		  <td class="b" nowrap="nowrap">2019</td>
+		  <td class="c" id="displayYearEl" title="You are here: 12:34:00 Nov 20, 2020">2020</td>
+		  <td class="f" nowrap="nowrap">2021</td>
+		</tr>
+	      </tbody>
+	    </table>
+	  </td>
+	</tr>
+	<tr>
+	  <td class="s">
+	    	    <div id="wm-nav-captures">
+	      	      <a class="t" href="/web/20201120123400*/https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine/" title="See a list of every capture for this URL">73 captures</a>
+	      <div class="r" title="Timespan for captures of this URL">18 Nov 2020 - 19 Mar 2021</div>
+	      </div>
+	  </td>
+	  <td class="k">
+	    <a href="" id="wm-graph-anchor">
+	      <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+		<canvas id="wm-sparkline-canvas" width="650" height="27" border="0"></canvas>
+	      </div>
+	    </a>
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+    <div style="position:absolute;bottom:0;right:2px;text-align:right;">
+      <a id="wm-expand" class="wm-btn wm-closed" href="#expand" onclick="__wm.ex(event);return false;"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span style="font-size:80%">About this capture</span></a>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+                    <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+            <div style="display:inline-block;vertical-align:top;width:50%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/focused_crawls);"></span>
+		Organization: <a style="color:#33f;" href="https://archive.org/details/focused_crawls" target="_new"><span class="wm-title">Internet Archive</span></a>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Focused crawls are collections of frequently-updated webcrawl data from narrow (as opposed to broad or wide) web crawls, often focused on a single domain or subdomain.<br />
+	</div>
+	      </div>
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/welt.de)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/welt.de" target="_new"><span class="wm-title">welt.de</span></a></div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="/_static/images/loading.gif" alt="loading" /></div>
+    </div>
+    </div>
+  </div></div></div></div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20201120123400/https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine/</div>
+<div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=https%3A//web.archive.org/web/20201120123400/https%3A//investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine/"
+	    scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><script type="text/javascript">
+__wm.bt(650,27,25,2,"web","https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine/","20201120123400",1996,"/_static/",["/_static/css/banner-styles.css?v=omkqRugM","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+    <div id="skip">
+      <a class="visually-hidden focusable skip-link" href="#main-menu">
+        Skip to main navigation
+      </a>
+    </div>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+<div class="body-page">
+    <header id="header" class="header-v1">
+
+                    <div class="topbar">
+                <div class="topbar-inner">
+                    <div class="container">
+                        <div class="content">
+                            
+                        
+    <h2 class="visually-hidden">Topbar Nav</h2>
+    
+
+                
+<nav role="navigation" aria-labelledby="block-topbarmenu-menu" id="block-topbarmenu" class="topBarMenu block block-menu navigation menu--top-bar-menu">
+  <div class="block-content">
+
+                        <ul class="gva_menu">
+
+                                    <li class="menu-item menu-item--active-trail">
+                <a class="is-active" target="" href="/web/20201120123400/https://investors.biontech.de/investors-media" title="Investors &amp; Media">Investors &amp; Media</a>
+              </li>
+                                                <li class="menu-item">
+                <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/careers" title="Careers">Careers</a>
+              </li>
+                                                <li class="menu-item">
+                <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/connect" title="Connect">Connect</a>
+              </li>
+                      
+        </ul>
+          
+
+    
+  </div>
+</nav>
+
+    
+
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        
+        <div class="header-main">
+            <div class="container header-content-layout">
+                <div class="header-main-inner p-relative">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-8 branding">
+                            
+  
+    
+      
+              
+            <div class="clearfix text-formatted field field--name-field-nir-global-block-body field--type-text-long field--label-hidden field__item"><p>
+	<a class="site-branding-logo" href="https://web.archive.org/web/20201120123400/https://biontech.de/" rel="home" title="Home">
+		<img alt="Home" data-entity-type="file" data-entity-uuid="1837ee17-6885-4f93-a877-76ed83809177" src="/web/20201120123400im_/https://investors.biontech.de/system/files-encrypted/nasdaq_kms/inline-images/logo_0.png"/></a>
+</p></div>
+      
+
+      
+  
+                                                    </div>
+                        <div class="col-md-9 col-sm-6 col-xs-4 p-static">
+                            <div class="header-inner clearfix">
+                                <div class="main-menu">
+                                    <div class="area-main-menu">
+                                        <div class="area-inner">
+                                            <div class="search-mobile-cont">
+                                                <div class="search-input-dup-cont">
+                                                    <input id="search-input-dup" class="earch-input-dup" placeholder="Search"/>
+                                                </div>
+                                            </div>
+                                            <div class="gva-offcanvas-mobile">
+                                                <div class="close-offcanvas hidden">
+                                                    <i class="gv-icon-8"></i>
+                                                </div>
+                                                <nav role="navigation" aria-labelledby="block-gavias-tico-main-menu-menu" id="block-gavias-tico-main-menu" class="block block-menu navigation menu--main">
+                                                    <h2 class="visually-hidden block-title" id="block-gavias-tico-main-menu-menu">
+                                                        <span>Main navigation</span>
+                                                    </h2>
+                                                    <div class="block-content">
+                                                        <div class="gva-navigation">
+                                                            <div class="arr-slide">
+                                                                <a href="#">&nbsp;</a>
+                                                            </div>
+
+                                                            
+                        
+    <h2 class="visually-hidden">Main navigation</h2>
+    
+
+                
+                           <ul class="clearfix gva_menu gva_menu_main">
+                                                        <li class="menu-item menu-item--expanded gva-mega-menu megamenu menu-grid menu-columns-4 levelOneWithChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/our-dna/vision">
+                Our DNA
+                <span class="icaret nav-plus fa fa-angle-down"></span>
+              </a>
+                                         <ul class="menu sub-menu">
+                                                        <li class="menu-item menu-item--expanded levelTwoWithChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/">
+                Our DNA - Child
+                <span class="icaret nav-plus fa fa-angle-down"></span>
+              </a>
+                                         <ul class="menu sub-menu">
+                                                        <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/our-dna/vision">Our vision</a>
+            </li>
+                                                                    <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/our-dna/leadership">Leadership</a>
+            </li>
+                                                                    <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/our-dna/collaborators">Collaborators</a>
+            </li>
+                                                                    <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/our-dna/services">Services</a>
+            </li>
+                                                                    <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/our-dna/locations">Our locations</a>
+            </li>
+                            </ul>
+  
+            </li>
+            <li class="cont-box-article-menu" id="cont-box-article-1"></li>
+                            </ul>
+  
+            </li>
+                                                                    <li class="menu-item menu-item--expanded gva-mega-menu megamenu menu-grid menu-columns-4 levelOneWithChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/how-we-translate/biontech-approach">
+                How we translate
+                <span class="icaret nav-plus fa fa-angle-down"></span>
+              </a>
+                                         <ul class="menu sub-menu">
+                                                        <li class="menu-item menu-item--expanded levelTwoWithChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/">
+                How we translate - Child
+                <span class="icaret nav-plus fa fa-angle-down"></span>
+              </a>
+                                         <ul class="menu sub-menu">
+                                                        <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/how-we-translate/biontech-approach">The BionTech Approach</a>
+            </li>
+                                                                    <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/how-we-translate/mrna-therapeutics">mRNA Therapeutics</a>
+            </li>
+                                                                    <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/how-we-translate/engineered-cell-therapies">Engineered Cell Therapies</a>
+            </li>
+                                                                    <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/how-we-translate/antibodies">Antibodies</a>
+            </li>
+                                                                    <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/how-we-translate/small-molecule-immunomodulators">Small Molecule Immunomodulators</a>
+            </li>
+                                                                    <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/how-we-translate/manufacturing">Manufacturing</a>
+            </li>
+                                                                    <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/how-we-translate/intellectual-property">Intellectual property</a>
+            </li>
+                            </ul>
+  
+            </li>
+            <li class="cont-box-article-menu" id="cont-box-article-2"></li>
+                            </ul>
+  
+            </li>
+                                                                    <li class="menu-item menu-item--expanded gva-mega-menu megamenu menu-grid menu-columns-4 levelOneWithChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/science/individualized-cancer-medicine">
+                Science
+                <span class="icaret nav-plus fa fa-angle-down"></span>
+              </a>
+                                         <ul class="menu sub-menu">
+                                                        <li class="menu-item menu-item--expanded levelTwoWithChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/">
+                Science - Child
+                <span class="icaret nav-plus fa fa-angle-down"></span>
+              </a>
+                                         <ul class="menu sub-menu">
+                                                        <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/science/individualized-cancer-medicine">Individualized cancer medicine</a>
+            </li>
+                                                                    <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/science/pipeline">Pipeline</a>
+            </li>
+                                                                    <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/science/platforms">Platforms</a>
+            </li>
+                                                                    <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/science/publications">Publications</a>
+            </li>
+                            </ul>
+  
+            </li>
+            <li class="cont-box-article-menu" id="cont-box-article-3"></li>
+                            </ul>
+  
+            </li>
+                                                                    <li class="menu-item menu-item--expanded gva-mega-menu megamenu menu-grid menu-columns-4 levelOneWithChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/for-patients/info-resources">
+                For patients
+                <span class="icaret nav-plus fa fa-angle-down"></span>
+              </a>
+                                         <ul class="menu sub-menu">
+                                                        <li class="menu-item menu-item--expanded levelTwoWithChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/">
+                For patients - Child
+                <span class="icaret nav-plus fa fa-angle-down"></span>
+              </a>
+                                         <ul class="menu sub-menu">
+                                                        <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/for-patients/info-resources">Info &amp; Resources</a>
+            </li>
+                                                                    <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/for-patients/clinical-trials">Clinical trials</a>
+            </li>
+                            </ul>
+  
+            </li>
+            <li class="cont-box-article-menu" id="cont-box-article-4"></li>
+                            </ul>
+  
+            </li>
+                                                                    <li class="menu-item menu-item--expanded gva-mega-menu megamenu menu-grid menu-columns-4 levelOneWithChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/covid-19">
+                COVID-19
+                <span class="icaret nav-plus fa fa-angle-down"></span>
+              </a>
+                                         <ul class="menu sub-menu">
+                                                        <li class="menu-item menu-item--expanded levelTwoWithChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/">
+                covid - child
+                <span class="icaret nav-plus fa fa-angle-down"></span>
+              </a>
+                                         <ul class="menu sub-menu">
+                                                        <li class="item-child levelTwoNoChildren">
+              <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/covid-19">COVID-19</a>
+            </li>
+                            </ul>
+  
+            </li>
+            <li class="cont-box-article-menu" id=""></li>
+                            </ul>
+  
+            </li>
+                            </ul>
+  
+
+
+    
+
+                                                            
+                                                                                                                            <div class="generic-mob-menu">
+                                                                    <div class="separator-generic-mob-menu"></div>
+                                                                    
+                        
+    <h2 class="visually-hidden">Topbar Nav</h2>
+    
+
+                
+        
+          <li class="menu-mob-other">
+        <a target="" href="/web/20201120123400/https://investors.biontech.de/investors-media">Investors &amp; Media</a>
+      </li>
+          <li class="menu-mob-other">
+        <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/careers">Careers</a>
+      </li>
+          <li class="menu-mob-other">
+        <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/connect">Connect</a>
+      </li>
+    
+  
+
+
+    
+
+                                                                                                                                    </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                        <div id="menu-bar" class="menu-bar hidden-lg hidden-md">
+                                            <span class="one"></span>
+                                            <span class="two"></span>
+                                            <span class="three"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div role="main" class="main main-page">
+        <div class="clearfix"></div>
+        <div class="help show">
+            <div class="container">
+                <div class="control-panel">
+                    <i class="fa fa-cogs"></i>
+                </div>
+                <div class="content-inner"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="clearfix"></div>
+        <div id="content" class="content content-full">
+            <div>
+                <div class="content-main-inner">
+                    <div id="page-main-content" class="main-content">
+                        <div class="main-content-inner">
+                            <div class="content-main">
+                                <div>
+                                    <div id="block-gavias-tico-content--4" class="block block-system block-system-main-block no-title">
+                                        <div class="content block-content">
+                                            <div class="hero-conainer gbb-row bg-size-cover" style="background-image:url('/web/20201120123400im_/https://investors.biontech.de/sites/g/files/knoqqb50866/themes/site/nir_pid3469/client/images/banner-ir.png'); background-repeat:no-repeat; background-position:center bottom">
+                                                <div class="bb-inner default">
+                                                    <div class="bb-container container">
+                                                        <div class="row">
+                                                            <div class="row-wrapper clearfix">
+                                                                <div class="gsc-column col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-title">
+                                                                    <div class="column-inner  bg-size-cover">
+                                                                        <div class="column-content-inner">
+                                                                            <div class="column-content h1-title">
+                                                                                <h1 class="banner-header">
+                                                                                                                                                                            Press Release
+                                                                                                                                                                    </h1>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <article data-history-node-id="38" role="article" class="node node--type-index-news node--promoted node--view-mode-full clearfix">
+                                                <div class="node__content clearfix">
+                                                    <div class="bg-greyx ndq-8771" id="ndq-content">
+                                                        <div class="container cont-control-fixed">
+                                                            <div class="row order-control">
+                                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 ir-side-bar">
+                                                                    
+                                                                                                                                            <div class="side-nav">
+                                                                            
+                        
+    <h2 class="visually-hidden">IR Side Nav</h2>
+    
+
+                
+                     <ul class="side-nav-menu">
+                                          <li class="levelOneNoChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/investors-media">Overview</a>
+            </li>
+                                                        <li class="levelOneNoChildren active">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/press-releases">Press Releases</a>
+            </li>
+                                                        <li class="levelOneNoChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/events-and-presentations">Events &amp; Presentations</a>
+            </li>
+                                                        <li class="levelOneNoChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/sec-filings">SEC Filings</a>
+            </li>
+                                                        <li class="levelOneWithChildren has-submenu">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/annual-reports">Financial Reports</a>
+                                   <ul class="side-nav-submenu">
+                                          <li class="levelTwoNoChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/annual-reports">Annual Reports</a>
+            </li>
+                                                        <li class="levelTwoNoChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/quarterly-reports">Quarterly Reports</a>
+            </li>
+                            </ul>
+  
+            </li>
+                                                        <li class="levelOneNoChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/financial-calendar">Financial Calendar</a>
+            </li>
+                                                        <li class="levelOneNoChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/agm">Annual General Meeting</a>
+            </li>
+                                                        <li class="levelOneNoChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/hv">Hauptversammlung</a>
+            </li>
+                                                        <li class="levelOneNoChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/corporate-governance">Corporate Governance</a>
+            </li>
+                                                        <li class="levelOneNoChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/analyst-coverage">Analyst Coverage</a>
+            </li>
+                                                        <li class="levelOneNoChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/stock-information">Stock Information</a>
+            </li>
+                                                        <li class="levelOneNoChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/investor-faqs">Investor FAQ</a>
+            </li>
+                                                        <li class="levelOneNoChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/media-materials">Media Materials</a>
+            </li>
+                                                        <li class="levelOneNoChildren">
+              <a target="" href="/web/20201120123400/https://investors.biontech.de/shareholder-services/investor-alerts">Sign-up for Email Alerts</a>
+            </li>
+                            </ul>
+  
+
+
+    
+
+                                                                        </div>
+                                                                                                                                        
+
+                                                                                                                                        
+
+                                                                                                                                            <div class="sidebar-contacts rounded-corners">
+                                                                            
+  
+    
+      
+              
+            <div class="clearfix text-formatted field field--name-field-nir-global-block-body field--type-text-long field--label-hidden field__item"><div class="sidebar-contact"><span class="sidebar-contact-title">Investor Contact</span> <span class="sidebar-contact-text"> Sylke Maas, Ph.D.<br/>
+VP Investor Relations &amp; Business Strategy<br/><a href="https://web.archive.org/web/20201120123400/mailto:Investors@biontech.de">Investors@biontech.de</a><br/>
++49 6131 9084-0</span></div>
+
+<div class="sidebar-contact">For U.S. Investors:<br/>
+Westwicke<br/>
+Victoria Meissner, M.D.<br/><a href="https://web.archive.org/web/20201120123400/mailto:victoria.meissner@westwicke.com">victoria.meissner@westwicke.com</a><br/>
++1 646 677-1837</div>
+<!--<div class="sidebar-contact"><span class="sidebar-contact-title">Whistleblower Hotline</span> <span class="sidebar-contact-text"> BioNTech Hotline (anonymous)<br />
+Germany: 0800 000-8972<br />
+US: 844 901-0271<br />
+Other: +1 757 278-0107<br />
+Online Access to <a href="https://biontech.gan-compliance.com/caseReport">Whistle Blowing Reporting</a><br />
+Or by <a href="mailto:corporatecompliance@biontech.de">Email</a></span></div>-->
+
+<div class="sidebar-contact"><span class="sidebar-contact-title">Media Contact</span> <span class="sidebar-contact-text"> Jasmina Alatovic<br/>
+Senior Manager Global External Communications<br/><a href="https://web.archive.org/web/20201120123400/mailto:Media@biontech.de">Media@biontech.de</a><br/>
++49 6131 9084-1513 </span></div>
+</div>
+      
+
+      
+  
+                                                                        </div>
+                                                                                                                                        
+                                                                </div>
+                                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 ir-content-area">
+
+                                                                                                                                            <div class="language-switcher">
+                                                                            <div class="language-switcher-language-url block--language-blocklanguage-content block--language-blocklanguage-content--8771 block--lang-switcher--language-block--language-content block--lang-switcher--language-block--language-content--8771 block--a85dfc23-f45a-46c4-b028-39d90ffdabad block--a85dfc23-f45a-46c4-b028-39d90ffdabad--8771 block block-language block-language-blocklanguage-content" id="block-languageswitchercontent" role="navigation">
+  
+    
+      <ul class=" inline-links" data-block-uuid="a85dfc23-f45a-46c4-b028-39d90ffdabad"><li hreflang="en" data-drupal-link-system-path="node/8771" class="en inline-links__item is-active"><a href="/web/20201120123400/https://investors.biontech.de/news-releases/news-release-details/pfizer-and-biontech-conclude-phase-3-study-covid-19-vaccine" class="language-link is-active" hreflang="en" data-drupal-link-system-path="node/8771">English</a></li><li hreflang="de" data-drupal-link-system-path="node/8771" class="de inline-links__item"><a href="/web/20201120123400/https://investors.biontech.de/de/news-releases/news-release-details/pfizer-und-biontech-schliessen-phase-3-studie-erfolgreich-ab-0" class="language-link" hreflang="de" data-drupal-link-system-path="node/8771">German</a></li></ul>
+  </div>
+
+                                                                        </div>
+                                                                    
+                                                                                                                                            
+      <div id="block-nir-pid3469-websitenoticeblock" class="block--website-notice-block block--website-notice-block--8771 block--content--website-notice-block block--content--website-notice-block--8771 block--f47281d2-4f1a-4c92-9f81-37b6f8578261 block--f47281d2-4f1a-4c92-9f81-37b6f8578261--8771 block block-nir-website-notices block-website-notice-block">
+  
+    
+      
+  </div>
+<div data-drupal-messages-fallback class="hidden"></div>
+<div id="block-nir-pid3469-content" class="block--system-main-block block--system-main-block--8771 block--content--system-main-block block--content--system-main-block--8771 block--21e6a44c-bbd1-4ffe-9f57-453eacfc3740 block--21e6a44c-bbd1-4ffe-9f57-453eacfc3740--8771 block block-system block-system-main-block">
+  
+    
+      <h2>
+<div class="field field--name-field-nir-news-title field--type-string field--label-hidden">
+        <div class="field__item">Pfizer and BioNTech Conclude Phase 3 Study of COVID-19 Vaccine Candidate, Meeting All Primary Efficacy Endpoints</div>
+    </div>
+</h2>
+
+<div class="box__rightx">
+  
+  
+  
+  
+      <div class="file-link pdf-file-link">
+  <span class="file file--mime-application-pdf file--application-pdf"><a href="/web/20201120123400/https://investors.biontech.de/node/8771/pdf" type="application/pdf" target="_blank">PDF Version</a></span>
+</div>
+  </div>
+
+
+
+<article role="article" class="node node--nir-news--full node--type-nir-news node--view-mode-full node--promoted">
+
+  <div class="node__content news-release-content">
+                <ul><li><em>Primary efficacy analysis demonstrates BNT162b2 to be 95% effective against COVID-19 beginning 28 days after the first dose; 170 confirmed cases of COVID-19 were evaluated, with 162 observed in the placebo group versus 8 in the vaccine group</em></li><li><em>Efficacy was consistent across age, gender, race and ethnicity demographics; observed efficacy in adults over 65 years of age was over 94%</em></li><li><em>Safety data milestone required by U.S. Food and Drug Administration (FDA) for Emergency Use Authorization (EUA) has been achieved</em></li><li><em>Data demonstrates vaccine was well tolerated across all populations with over 43,000 participants enrolled; no serious safety concerns observed; the only Grade 3 adverse event greater than 2% in frequency was fatigue at 3.8% and headache at 2.0%</em></li><li><em>Companies plan to submit within days to the FDA for EUA and share data with other regulatory agencies around the globe</em></li><li><em>The companies expect to produce globally up to 50 million vaccine doses in 2020 and up to 1.3 billion doses by the end of 2021</em></li></ul><p align="justify"><strong>NEW YORK and MAINZ, GERMANY, November 18, 2020</strong> — <a href="https://web.archive.org/web/20201120123400/https://www.globenewswire.com/Tracker?data=Yli2d5nvthuV5tgeZIpzfNa66X9aMWyRcb2c3eYCC7LVUbfEPTAS5qEjoWW9lex6gtFcZvarKhgdJF9WTS1yog==" rel="nofollow" target="_blank"><u>Pfizer Inc.</u></a> (NYSE: PFE) and <a href="https://web.archive.org/web/20201120123400/https://www.globenewswire.com/Tracker?data=hDf010SOKY9ImJTMfLoYkeqr7USo3RbkSJXZNMRX8mlCKyHr1c2F9DT9mjo9LMT6ewFhRCEzViCxu4yA2e7l7g==" rel="nofollow" target="_blank"><u>BioNTech SE</u></a> (Nasdaq: BNTX) today announced that, after conducting the final efficacy analysis in their ongoing Phase 3 study, their mRNA-based COVID-19 vaccine candidate, BNT162b2, met all of the study’s primary efficacy endpoints. Analysis of the data indicates a vaccine efficacy rate of 95% (p&lt;0.0001) in participants without prior SARS-CoV-2 infection (first primary objective) and also in participants with and without prior SARS-CoV-2 infection (second primary objective), in each case measured from 28 days after the first dose, 7 days after the second dose. The first primary objective analysis is based on 170 cases of COVID-19, as specified in the study protocol, of which 162 cases of COVID-19 were observed in the placebo group versus 8 cases in the BNT162b2 group. Efficacy was consistent across age, gender, race and ethnicity demographics. The observed efficacy in adults over 65 years of age was over 94%.</p>  <p align="justify">There were 10 severe cases of COVID-19 observed in the trial, with nine of the cases occurring in the placebo group and one in the BNT162b2 vaccinated group. To date, the Data Monitoring Committee for the study has not reported any serious safety concerns related to the vaccine. A review of unblinded reactogenicity data from the final analysis which consisted of a randomized subset of at least 8,000 participants 18 years and older in the Phase 2/3 study demonstrates that the vaccine was well tolerated, with most solicited adverse events resolving shortly after vaccination. The only Grade 3 (severe) solicited adverse events greater than or equal to 2% in frequency after the first or second dose were fatigue at 3.8% and headache at 2.0% following dose 2. Consistent with earlier shared results, older adults tended to report fewer and milder solicited adverse events following vaccination. </p>  <p align="justify">In addition, the companies announced that the safety milestone required by the U.S. Food and Drug Administration (FDA) for Emergency Use Authorization (EUA) has been achieved. Pfizer and BioNTech plan to submit a request within days to the FDA for an EUA based on the totality of safety and efficacy data collected to date, as well as manufacturing data relating to the quality and consistency of the vaccine. These data also will be submitted to other regulatory agencies around the world.</p>  <p align="justify">“The study results mark an important step in this historic eight-month journey to bring forward a vaccine capable of helping to end this devastating pandemic. We continue to move at the speed of science to compile all the data collected thus far and share with regulators around the world,” said <strong>Dr. Albert Bourla, Pfizer Chairman and CEO</strong>. “With hundreds of thousands of people around the globe infected every day, we urgently need to get a safe and effective vaccine to the world.” </p>  <p align="justify">“We are grateful that the first global trial to reach the final efficacy analysis mark indicates that a high rate of protection against COVID-19 can be achieved very fast after the first 30 µg dose, underscoring the potential of BNT162 to provide early protection,” said <strong>Ugur Sahin, M.D., CEO and Co-founder of BioNTech</strong>. “These achievements highlight the potential of mRNA as a new drug class. Our goal from the very beginning was to design and develop a vaccine that would generate rapid and potent protection against COVID-19 with a benign tolerability profile across all ages. We believe we have successfully accomplished this with our vaccine candidate BNT162b2 in all age groups studied so far and look forward to sharing further details with the regulatory authorities. I want to thank all the devoted women and men who contributed to this historically unprecedented achievement. We will continue to work with our partners and governments around the world to prepare for global distribution in 2020 and beyond.”</p>  <p align="justify">The Phase 3 clinical trial of BNT162b2 began on July 27 and has enrolled 43,661 participants to date, 41,135 of whom have received a second dose of the vaccine candidate as of November 13, 2020. Approximately 42% of global participants and 30% of U.S. participants have racially and ethnically diverse backgrounds, and 41% of global and 45% of U.S. participants are 56-85 years of age. A breakdown of the diversity of clinical trial participants can be found <a href="https://web.archive.org/web/20201120123400/https://www.globenewswire.com/Tracker?data=ad78-V3TIZpaI0hRxmiSbgkEJUyAXaiiyEL-ARI3BmSe5nBb577HWGg9iwQLkpFDr5Zut3MDUXtDp4gcUuk1TJMOdJQMV0I0rP8L9ghyxUs=" rel="nofollow" target="_blank"><u>here</u></a><u> </u>from approximately 150 clinical trials sites in United States, Germany, Turkey, South Africa, Brazil and Argentina. The trial will continue to collect efficacy and safety data in participants for an additional two years. </p>  <p align="justify">Based on current projections, the companies expect to produce globally up to 50 million vaccine doses in 2020 and up to 1.3 billion doses by the end of 2021. Four of Pfizer’s facilities are part of the manufacturing and supply chain; St. Louis, MO; Andover, MA; and Kalamazoo, MI in the U.S.; and Puurs in Belgium. BioNTech’s German sites will also be leveraged for global supply.</p>  <p align="justify">Pfizer is confident in its vast experience, expertise and existing cold-chain infrastructure to distribute the vaccine around the world. The companies have developed specially designed, temperature-controlled thermal shippers utilizing dry ice to maintain temperature conditions of -70°C±10°C. They can be used be as temporary storage units for 15 days by refilling with dry ice. Each shipper contains a GPS-enabled thermal sensor to track the location and temperature of each vaccine shipment across their pre-set routes leveraging Pfizer’s broad distribution network.</p>  <p align="justify">Pfizer and BioNTech plan to submit the efficacy and safety data from the study for peer-review in a scientific journal once analysis of the data is completed.</p>  <p align="justify"><strong>About Pfizer: Breakthroughs That Change Patients’ Lives</strong><br/>At Pfizer, we apply science and our global resources to bring therapies to people that extend and significantly improve their lives. We strive to set the standard for quality, safety and value in the discovery, development and manufacture of health care products, including innovative medicines and vaccines. Every day, Pfizer colleagues work across developed and emerging markets to advance wellness, prevention, treatments and cures that challenge the most feared diseases of our time. Consistent with our responsibility as one of the world's premier innovative biopharmaceutical companies, we collaborate with health care providers, governments and local communities to support and expand access to reliable, affordable health care around the world. For more than 150 years, we have worked to make a difference for all who rely on us. We routinely post information that may be important to investors on our website at <a href="https://web.archive.org/web/20201120123400/https://www.globenewswire.com/Tracker?data=efkBESitL-YYL3Z0laTvow2llGFscFffkJd5BwOiTNGOtjFDXsnDOMTTrrWjwIHkGrKr7l170Vr-Cf0IOcmK5A==" rel="nofollow" target="_blank"><u>www.Pfizer.com</u></a>. In addition, to learn more, please visit us on <a href="https://web.archive.org/web/20201120123400/https://www.globenewswire.com/Tracker?data=efkBESitL-YYL3Z0laTvo2zbdJuTNF9-WfK2D7Q6C5GUvy5ow-iKwQsyx4ZETtqc0zENUzOZqpNT5axWduuvIg==" rel="nofollow" target="_blank"><u>www.Pfizer.com</u></a> and follow us on Twitter at <a href="https://web.archive.org/web/20201120123400/https://www.globenewswire.com/Tracker?data=_G7bMvP0UnHgRNdBi7C58Y5yD_vt1MwKM6uavr4WH8J9GONODA3QgMnza1EVMOxj60PNXXgeMmkscyRk7kz9qg==" rel="nofollow" target="_blank"><u>@Pfizer</u></a> and <a href="https://web.archive.org/web/20201120123400/https://www.globenewswire.com/Tracker?data=_G7bMvP0UnHgRNdBi7C58aDSWJrj99jYJyKkvw72mTcupprjbYWTE_o_8oUmeQOe0zPfz4E2RmC-oF4TaVBRlXH8iP_6Bix5Xu9JnlN_J7M=" rel="nofollow" target="_blank"><u>@Pfizer News</u></a>, <a href="https://web.archive.org/web/20201120123400/https://www.globenewswire.com/Tracker?data=33yxYtC2I0K4tZPfGski5s3o4ZHP3agvfitL54fVKSjNuaz9dJMbcS2fs_yowRkoI0H6GkHJ-V8eJS481Br7O_HudP6nCQCn8GgLiQR8_ao=" rel="nofollow" target="_blank"><u>LinkedIn</u></a>, <a href="https://web.archive.org/web/20201120123400/https://www.globenewswire.com/Tracker?data=wDqRtJtHVFLrdnoY4rjV_QUVojDDDSL9NIZNQLhPL9rquT_S_TQq6AO4do7dxb91mS86msyzNiDLUOTenvwXSw==" rel="nofollow" target="_blank"><u>YouTube</u></a> and like us on Facebook at <a href="https://web.archive.org/web/20201120123400/https://www.globenewswire.com/Tracker?data=dksh0JnhdKBurO_iVOmXvoO4yOIddjXTCsCPmWuYLjSsFuZnBZqF1BL6C2m7YnFEj37K3VlD2qyWE_dSx5HscHETzEHDKFBMIAuvMoaa-uE=" rel="nofollow" target="_blank"><u>Facebook.com/Pfizer</u></a>.</p>  <p align="justify"><strong>Pfizer Disclosure Notice</strong><br/>The information contained in this release is as of November 18, 2020. Pfizer assumes no obligation to update forward-looking statements contained in this release as the result of new information or future events or developments.</p>  <p align="justify">This release contains forward-looking information about Pfizer’s efforts to combat COVID-19, the collaboration between BioNTech and Pfizer to develop a potential COVID-19 vaccine, the BNT162 mRNA vaccine program, and modRNA candidate BNT162b2 (including qualitative assessments of available data, potential benefits, expectations for clinical trials, anticipated timing of regulatory submissions and anticipated manufacturing, distribution and supply), that involves substantial risks and uncertainties that could cause actual results to differ materially from those expressed or implied by such statements. Risks and uncertainties include, among other things, the uncertainties inherent in research and development, including the ability to meet anticipated clinical endpoints, commencement and/or completion dates for clinical trials, regulatory submission dates, regulatory approval dates and/or launch dates, as well as risks associated with clinical data (including the Phase 3 data that is the subject of this release), including the possibility of unfavorable new preclinical or clinical trial data and further analyses of existing preclinical or clinical trial data; the ability to produce comparable clinical or other results, including the rate of vaccine effectiveness and safety and tolerability profile observed to date, in additional analyses of the Phase 3 trial or in larger, more diverse populations upon commercialization; the risk that clinical trial data are subject to differing interpretations and assessments, including during the peer review/publication process, in the scientific community generally, and by regulatory authorities; whether and when data from the BNT162 mRNA vaccine program will be published in scientific journal publications and, if so, when and with what modifications; whether regulatory authorities will be satisfied with the design of and results from these and any future preclinical and clinical studies; whether and when any biologics license and/or emergency use authorization applications may be filed in any jurisdictions for BNT162b2 or any other potential vaccine candidates; whether and when any such applications may be approved by regulatory authorities, which will depend on myriad factors, including making a determination as to whether the vaccine candidate’s benefits outweigh its known risks and determination of the vaccine candidate’s efficacy and, if approved, whether it will be commercially successful; decisions by regulatory authorities impacting labeling, manufacturing processes, safety and/or other matters that could affect the availability or commercial potential of a vaccine, including development of products or therapies by other companies; disruptions in the relationships between us and our collaboration partners or third-party suppliers; risks related to the availability of raw materials to manufacture a vaccine; challenges related to our vaccine candidate’s ultra-low temperature formulation and attendant storage, distribution and administration requirements, including risks related to handling after delivery by Pfizer; the risk that we may not be able to successfully develop non-frozen formulations; the risk that we may not be able to create or scale up manufacturing capacity on a timely basis or have access to logistics or supply channels commensurate with global demand for any potential approved vaccine, which would negatively impact our ability to supply the estimated numbers of doses of our vaccine candidate within the projected time periods indicated; whether and when additional supply agreements will be reached; uncertainties regarding the ability to obtain recommendations from vaccine technical committees and other public health authorities and uncertainties regarding the commercial impact of any such recommendations; uncertainties regarding the impact of COVID-19 on Pfizer’s business, operations and financial results; and competitive developments.</p>  <p align="justify">A further description of risks and uncertainties can be found in Pfizer’s Annual Report on Form 10-K for the fiscal year ended December 31, 2019 and in its subsequent reports on Form 10-Q, including in the sections thereof captioned “Risk Factors” and “Forward-Looking Information and Factors That May Affect Future Results”, as well as in its subsequent reports on Form 8-K, all of which are filed with the U.S. Securities and Exchange Commission and available at <a href="https://web.archive.org/web/20201120123400/https://www.globenewswire.com/Tracker?data=efkBESitL-YYL3Z0laTvoxwo4qu7BdwQ58c8BxmRzKeu_42_yAUUj75IBhjbP6BSEah3Z13lyMxUcOjZXqxzNGgkle3WEHNOiWBoqJP6GjGIZaA80i3xpVjkDNkpCSAmaSg8CA9GJglo1OCPy7CdkqlvMDrF38pTcQH6oOBlj1_ZXsj_8mFJ94-JmDLs1BD2GRZPxzwExY0-DCIMuBYwJI7jaH0uotGVrSjEhlJE3pw=" rel="nofollow" target="_blank"><u>www.sec.gov </u></a>and <a href="https://web.archive.org/web/20201120123400/https://www.globenewswire.com/Tracker?data=efkBESitL-YYL3Z0laTvoyw4EwV0C_34978B4ukhkh_kXf5DmEgSwfi1vrqBrlkmEekqGZ852if_0P2au9L-AWIbeor2Yz64r_UsJ2b4XBTWzsBlab_3aFqdZaVNjXIynB5gt0eAY21I4BM6dvZzgisYzFxbXJBW60nXXwXOAKeEpZh6aM0zetl01Tg-wLaIzFPjzz4RWZxJoB5l37DazcFcb33iS3b0wZ1lpmKbJlE=" rel="nofollow" target="_blank"><u>www.pfizer.com</u></a>.</p>  <p align="justify"><strong>About BioNTech</strong><br/>Biopharmaceutical New Technologies is a next generation immunotherapy company pioneering novel therapies for cancer and other serious diseases. The Company exploits a wide array of computational discovery and therapeutic drug platforms for the rapid development of novel biopharmaceuticals. Its broad portfolio of oncology product candidates includes individualized and off-the-shelf mRNA-based therapies, innovative chimeric antigen receptor T cells, bi-specific checkpoint immuno-modulators, targeted cancer antibodies and small molecules. Based on its deep expertise in mRNA vaccine development and in-house manufacturing capabilities, BioNTech and its collaborators are developing multiple mRNA vaccine candidates for a range of infectious diseases alongside its diverse oncology pipeline. BioNTech has established a broad set of relationships with multiple global pharmaceutical collaborators, including Genmab, Sanofi, Bayer Animal Health, Genentech, a member of the Roche Group, Regeneron, Genevant, Fosun Pharma, and Pfizer. </p>  <p align="justify">For more information, please visit <u>www.BioNTech.de</u>.</p>  <p align="justify"><strong>BioNTech Forward-looking Statements</strong><br/>This press release contains “forward-looking statements” of BioNTech within the meaning of the Private Securities Litigation Reform Act of 1995. These forward-looking statements may include, but may not be limited to, statements concerning: BioNTech’s efforts to combat COVID-19; the collaboration between BioNTech and Pfizer to develop a potential COVID-19 vaccine; our expectations regarding the potential characteristics of BNT162b2 in our Phase 2/3 trial and/or in commercial use based on data observations to date; the expected timepoint for additional readouts on efficacy data of BNT162b2 in our Phase 2/3 trial; the nature of the clinical data, which is subject to ongoing peer review, regulatory review and market interpretation; the timing for submission of data for, or receipt of, any potential Emergency Use Authorization; the timing for submission of manufacturing data to the FDA; and the ability of BioNTech to supply the quantities of BNT162 to support clinical development and, if approved, market demand, including our production estimates for 2020 and 2021. Any forward-looking statements in this press release are based on BioNTech current expectations and beliefs of future events, and are subject to a number of risks and uncertainties that could cause actual results to differ materially and adversely from those set forth in or implied by such forward-looking statements. These risks and uncertainties include, but are not limited to: the ability to meet the pre-defined endpoints in clinical trials; competition to create a vaccine for COVID-19; the ability to produce comparable clinical or other results, including our stated rate of vaccine effectiveness and safety and tolerability profile observed to date, in the remainder of the trial or in larger, more diverse populations upon commercialization; the ability to effectively scale our productions capabilities; and other potential difficulties. For a discussion of these and other risks and uncertainties, see BioNTech’s Quarterly Report for the Three and Nine Months Ended September 30, 2020, filed as Exhibit 99.2 to its Current Report on Form 6-K filed with the SEC on November 10, which is available on the SEC’s website at <a href="https://web.archive.org/web/20201120123400/https://www.globenewswire.com/Tracker?data=efkBESitL-YYL3Z0laTvowDfS1r7ph6zd63KSXeOly4IuV01ebdLxaOXA5KXs1brXBtjuqORAaHAQbs6bu6Z0w==" rel="nofollow" target="_blank"><u>www.sec.gov</u></a>. All information in this press release is as of the date of the release, and BioNTech undertakes no duty to update this information unless required by law.</p>  <p align="justify"><strong>Pfizer Contacts:</strong></p>  <p align="justify"><strong>Media Relations</strong><br/>Amy Rose<br/>+1 (212) 733-7410<br/><a href="https://web.archive.org/web/20201120123400/https://www.globenewswire.com/Tracker?data=S-1rMYQAuANI7pxXrxFWDp6-T6s9xrBrTceZM-BB1X6Cr4Cx3LnGt1s4QEr_dLeGg7e1dEONmfytHByG0bYkrZZab5nQ0rcG45H_1Ham-LE=" rel="nofollow" target="_blank"><u>Amy.Rose@pfizer.com</u></a></p>  <p align="justify"><strong>Investor Relations</strong><br/>Chuck Triano<br/>+1 (212) 733-3901<br/><a href="https://web.archive.org/web/20201120123400/https://www.globenewswire.com/Tracker?data=UD-pEyE4GJEK8662it3epYi4WJlzvRBCUihjWw0heXxekcXPki7ByoPDbw7ALnieShf-6OVt_zqjfrqlbZxFwvAJO4P6k1_bnLqqoI35z4_BU11dyfokqnoSFr8ParBb" rel="nofollow" target="_blank"><u>Charles.E.Triano@Pfizer.com</u></a></p>  <p align="justify"><strong>BioNTech Contacts:</strong></p>  <p align="justify"><strong>Media Relations</strong><br/>Jasmina Alatovic<br/>+49 (0)6131 9084 1513 or +49 (0)151 1978 1385<br/><a href="https://web.archive.org/web/20201120123400/https://www.globenewswire.com/Tracker?data=2t_2gHfXYivOG2jsEwoRnukmg44T8-pCro4XutXAjxBtUuSnME21Bmjs2yi8gUwviJbT9sMg06zuUwrQ4HfYc3NYOwOeXFJso1RjU28CTbA=" rel="nofollow" target="_blank"><u>Media@biontech.de</u></a></p>  <p align="justify"><strong>Investor Relations</strong><br/>Sylke Maas, Ph.D.<br/>+49 (0)6131 9084 1074<br/><a href="https://web.archive.org/web/20201120123400/https://www.globenewswire.com/Tracker?data=vl6Lki-WcZ276UXX0rb6s_g6ebrsaLH5Nz-q-xGwa4p8pGXA1Nkf6hlJ_5wwjfXFdkSy73_O6HargZhO7CkUBVuNYtRCZxm78pUE40XJe8k=" rel="nofollow" target="_blank"><u>Investors@biontech.de</u></a></p>
+  
+      </div>
+</article>
+  </div>
+
+  
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    <div class="before-footer">
+                <div class="container">
+                    <div class="row idm-hide-mobile">
+                        
+                        
+    <h2 class="visually-hidden">Before footer menu</h2>
+    
+
+                              <ul data-block-uuid="9641608e-8579-4bcb-a983-5dd665881a02" class="menu side-menu">
+                  <li class="side-menu__item">
+          <a href="/web/20201120123400/https://investors.biontech.de/shareholder-services/information-request" target="" rel="" data-drupal-link-system-path="node/5966">Information Request</a>
+                  </li>
+              <li class="side-menu__item">
+          <a href="/web/20201120123400/https://investors.biontech.de/shareholder-services/rss-feeds" target="" rel="" data-drupal-link-system-path="node/5951">RSS Feeds</a>
+                  </li>
+          </ul>
+  
+
+
+    
+
+                    </div>
+                </div>
+            </div>
+        
+
+    <footer id="footer" class="footer">
+
+                    <div class="footer-center">
+                <div class="container">
+                    <div class="row">
+                        
+  
+    
+      
+              
+            <div class="clearfix text-formatted field field--name-field-nir-global-block-body field--type-text-long field--label-hidden field__item"><div class="footer-first col-lg-3 col-md-3 col-sm-12 col-xs-12 column global-block-content">
+	<div class="first-footer-block block block-block-content block-block-contentc0aa9d0c-7f31-41a2-8ffe-7a4a22c0e281 no-title" id="block-firstfooterinfo">
+		<div class="content block-content">
+			<div class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
+				<div class="generic marginBott20">
+					<a href="https://web.archive.org/web/20201120123400/https://biontech.de/" target="_blank" title="Biontech">
+						<img alt="Logo" class="logo-footer" data-entity-type="file" data-entity-uuid="80f17c39-69c9-4815-a1af-5fe54e34838d" src="/web/20201120123400im_/https://investors.biontech.de/system/files-encrypted/nasdaq_kms/inline-images/logo-footer_0.png"/></a>
+				</div>
+
+				<p>
+					An der Goldgrube 12
+					<br/>
+					55131 Mainz
+					<br/>
+					Germany
+				</p>
+
+				<p> </p>
+
+				<p>
+					T: +49 6131 9084-0
+					<br/>
+					F: +49 6131 9084-390
+					<br/>
+					M:
+					<a href="https://web.archive.org/web/20201120123400/mailto:info@biontech.de">info@biontech.de</a>
+				</p>
+				<p onclick="location.href='https://web.archive.org/web/20201120123400/http://biontech.de/?ra=yes'" class="jsRestartAnimationx footerFingerPrint marginTop20">We aspire to individualize cancer medicine</p>			
+		</div>
+	</div>
+</div>
+</div></div>
+      
+
+      
+  
+                        
+    <h2 class="visually-hidden">02. Footer Column2 Links</h2>
+    
+
+                
+<div class="footer-second col-lg-3 col-md-3 col-sm-12 col-xs-6 column">
+  <nav role="navigation" aria-labelledby="block-footermain-menu" id="block-footermain" class="block block-menu navigation menu--footer-main">
+    <div class="block-content">
+
+                                <ul class="gva_menu">
+
+                          <li class="menu-item">
+                <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/our-dna/vision">Our DNA</a>
+              </li>
+                          <li class="menu-item">
+                <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/how-we-translate/biontech-approach">How We Translate</a>
+              </li>
+                          <li class="menu-item">
+                <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/science/individualized-cancer-medicine">Science</a>
+              </li>
+                          <li class="menu-item">
+                <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/for-patients/info-resources">For Patients</a>
+              </li>
+                          <li class="menu-item">
+                <a target="" href="/web/20201120123400/https://investors.biontech.de/investors-media">Investors &amp; Media</a>
+              </li>
+                          <li class="menu-item">
+                <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/careers">Careers</a>
+              </li>
+            
+          </ul>
+              
+
+      
+    </div>
+  </nav>
+</div>
+    
+
+                        
+    <h2 class="visually-hidden">03. Footer Column3 Links</h2>
+    
+
+                
+<div class="footer-third col-lg-3 col-md-3 col-sm-12 col-xs-6 column">
+  <nav role="navigation" aria-labelledby="block-gavias-tico-footer-menu" id="block-gavias-tico-footer" class="block block-menu navigation menu--footer">
+    <div class="block-content">
+
+                                <ul class="gva_menu">
+
+                          <li class="menu-item">
+                <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/connect">Connect</a>
+              </li>
+                          <li class="menu-item">
+                <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/imprint">Imprint</a>
+              </li>
+                          <li class="menu-item">
+                <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/terms-of-use">Terms of use</a>
+              </li>
+                          <li class="menu-item">
+                <a target="" href="https://web.archive.org/web/20201120123400/https://biontech.de/data-privacy-policy">Data privacy policy</a>
+              </li>
+            
+          </ul>
+              
+
+      
+    </div>
+  </nav>
+</div>
+    
+
+  
+    
+      
+              
+            <div class="clearfix text-formatted field field--name-field-nir-global-block-body field--type-text-long field--label-hidden field__item"><div class="footer-four col-lg-3 col-md-3 col-sm-12 col-xs-12 column global-block-content">
+        <div id="block-socialblockfooter" class="social-block-footer block block-block-content block-block-content63672dd0-c676-4d97-9559-ef493a438fbe no-title">
+            <div class="content block-content">
+                <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
+                    <div class="generic">
+                        <p>Follow us</p>
+                        <p>
+                            <a class="fb" href="https://web.archive.org/web/20201120123400/https://www.linkedin.com/company/biontech-se" target="_blank" title="Facebook"><i class="fa fa-linkedin"><span style="display: none;"> </span></i></a>
+                            <a class="twi" href="https://web.archive.org/web/20201120123400/https://twitter.com/BioNTech_Group" target="_blank" title="Twitter"><i class="fab fa-twitter"><span style="display: none;"> </span></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div></div>
+      
+
+      
+  
+                                                                                                                    </div>
+                </div>
+            </div>
+        
+                    <div class="copyright">
+                <div class="container">
+                    <div class="copyright-inner">
+                        <div>
+                            <div id="block-gavias-tico-powered" role="complementary" class="block block-system block-system-powered-by-block no-title">
+                                <div class="content block-content">
+                                    
+  
+    
+      
+              
+            <div class="clearfix text-formatted field field--name-field-nir-global-block-body field--type-text-long field--label-hidden field__item"><span>© Copyright BioNTech SE <script>
+<!--//--><![CDATA[// ><!--
+document.write((new Date()).getFullYear());
+//--><!]]>
+</script>. All Rights Reserved.</span></div>
+      
+
+      
+  
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </footer>
+    <a href="#top" class="scroll scroll-top">&nbsp;</a>
+
+    <div style="display: none">
+        <div>
+            <div class="views-element-container block block-views block-views-blocklist-post-menu-block-1 no-title" id="block-views-block-list-post-menu-block-1">
+                <div class="content block-content">
+                    <div>
+                        <div class="js-view-dom-id-bca57ddebb15c8b3f6bae044517079a922a4c7e780974af89056879438b047e6">
+                            <div class="view-content-wrap">
+                                <div class="box-article-1 box-article item">
+                                    <div class="views-field views-field-view-node-1">
+                                        <span class="field-content">
+                                            <a urldocument="" urlextern="" href="https://web.archive.org/web/20201120123400/https://biontech.de/our-dna/vision">
+                                                <div class="post-block">
+                                                    <div class="post-image">
+                                                        <img src="/web/20201120123400im_/https://investors.biontech.de/sites/g/files/knoqqb50866/themes/site/nir_pid3469/client/images/THUMB_internal_Vision.jpg" alt="Our Vision" typeof="Image"/>
+                                                    </div>
+                                                    <div class="post-content text-left">
+                                                        <div class="post-title">Our vision: individualize cancer medicine</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-article-1 box-article item">
+                                    <div class="views-field views-field-view-node-1">
+                                        <span class="field-content">
+                                            <a urldocument="" urlextern="/our-dna/leadership" href="https://web.archive.org/web/20201120123400/https://biontech.de/create-article-42">
+                                                <div class="post-block">
+                                                    <div class="post-image">
+                                                        <img src="/web/20201120123400im_/https://investors.biontech.de/sites/g/files/knoqqb50866/themes/site/nir_pid3469/client/images/THUMB_Meet-our-Leadership-Team.jpg" alt="Leadership" typeof="Image"/>    
+                                                    </div>
+                                                    <div class="post-content text-left">
+                                                        <div class="post-title">Meet our leadership team</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-article-1 box-article item">
+                                    <div class="views-field views-field-view-node-1">
+                                        <span class="field-content">
+                                            <a urldocument="" urlextern="" href="https://web.archive.org/web/20201120123400/https://biontech.de/our-dna/collaborators">
+                                                <div class="post-block">
+                                                    <div class="post-image">
+                                                        <img src="/web/20201120123400im_/https://investors.biontech.de/sites/g/files/knoqqb50866/themes/site/nir_pid3469/client/images/THUMB_internal_Collaborators_0.jpg" alt="Collaborators" typeof="Image"/>    
+                                                    </div>
+                                                    <div class="post-content text-left">
+                                                        <div class="post-title">Get to know our partners</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-article-1 box-article item">
+                                    <div class="views-field views-field-view-node-1">
+                                        <span class="field-content">
+                                            <a urldocument="" urlextern="" href="https://web.archive.org/web/20201120123400/https://biontech.de/our-dna/locations">
+                                                <div class="post-block">
+                                                    <div class="post-image">
+                                                        <img src="/web/20201120123400im_/https://investors.biontech.de/sites/g/files/knoqqb50866/themes/site/nir_pid3469/client/images/THUMB_Learn_About_our_Services.jpg" alt="Our Locations" typeof="Image"/>    
+                                                    </div>
+                                                    <div class="post-content text-left">
+                                                        <div class="post-title">Learn about our services</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="views-element-container block block-views block-views-blocklist-post-menu-block-2 no-title" id="block-views-block-list-post-menu-block-2">
+                <div class="content block-content">
+                    <div>
+                        <div class="js-view-dom-id-130f7e89c1375ca77d5e92143bcfb8d900c469a21b19282f4a55b7a1a1fc6693">
+                            <div class="view-content-wrap">
+                                <div class="box-article-2 box-article item">
+                                    <div class="views-field views-field-view-node-1">
+                                        <span class="field-content">
+                                            <a urldocument="" urlextern="" href="https://web.archive.org/web/20201120123400/https://biontech.de/how-we-translate/biontech-approach">
+                                                <div class="post-block">
+                                                    <div class="post-image">
+                                                        <img src="/web/20201120123400im_/https://investors.biontech.de/sites/g/files/knoqqb50866/themes/site/nir_pid3469/client/images/THUMB_internal_The-BioNTech-approach.jpg" alt="The BioNTech approach" typeof="Image"/>    
+                                                    </div>
+                                                    <div class="post-content text-left">
+                                                        <div class="post-title">How we approach individualized cancer medicine</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-article-2 box-article item">
+                                    <div class="views-field views-field-view-node-1">
+                                        <span class="field-content">
+                                            <a urldocument="" urlextern="" href="https://web.archive.org/web/20201120123400/https://biontech.de/how-we-translate/mrna-therapeutics">
+                                                <div class="post-block">
+                                                    <div class="post-image">
+                                                        <img src="/web/20201120123400im_/https://investors.biontech.de/sites/g/files/knoqqb50866/themes/site/nir_pid3469/client/images/THUMB_internal_mRNA-Therapeutics.jpg" alt="mRNA Therapeutics" typeof="Image"/>    
+                                                    </div>
+                                                    <div class="post-content text-left">
+                                                        <div class="post-title">Why mRNA represents a disruptive new drug class</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-article-2 box-article item">
+                                    <div class="views-field views-field-view-node-1">
+                                        <span class="field-content">
+                                            <a urldocument="" urlextern="" href="https://web.archive.org/web/20201120123400/https://biontech.de/how-we-translate/antibodies">
+                                                <div class="post-block">
+                                                    <div class="post-image">
+                                                        <img src="/web/20201120123400im_/https://investors.biontech.de/sites/g/files/knoqqb50866/themes/site/nir_pid3469/client/images/THUMB_internal_Antibodies.jpg" alt="Antibodies" typeof="Image"/>    
+                                                    </div>
+                                                    <div class="post-content text-left">
+                                                        <div class="post-title">
+                                                            Beyond mRNA: Expanding therapeutics with our antibody discovery engines
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-article-2 box-article item">
+                                    <div class="views-field views-field-view-node-1">
+                                        <span class="field-content">
+                                            <a urldocument="" urlextern="" href="https://web.archive.org/web/20201120123400/https://biontech.de/how-we-translate/manufacturing">
+                                                <div class="post-block">
+                                                    <div class="post-image">
+                                                        <img src="/web/20201120123400im_/https://investors.biontech.de/sites/g/files/knoqqb50866/themes/site/nir_pid3469/client/images/THUMB_internal_Manufacturing.jpg" alt="Manufacturing" typeof="Image"/>    
+                                                    </div>
+                                                    <div class="post-content text-left">
+                                                        <div class="post-title">Manufacturing our own therapeutics</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="views-element-container block block-views block-views-blocklist-post-menu-block-3 no-title" id="block-views-block-list-post-menu-block-3">
+                <div class="content block-content">
+                    <div>
+                        <div class="js-view-dom-id-156f751b27e2443c53e6afdca3e8cbd84d97f58c15e347d8c5533fa5c216d64e">
+                            <div class="view-content-wrap">
+                                <div class="box-article-3 box-article item">
+                                    <div class="views-field views-field-view-node-1">
+                                        <span class="field-content">
+                                            <a urldocument="" urlextern="/science/pipeline" href="https://web.archive.org/web/20201120123400/https://biontech.de/node/125">
+                                                <div class="post-block">
+                                                    <div class="post-image">
+                                                        <img src="/web/20201120123400im_/https://investors.biontech.de/sites/g/files/knoqqb50866/themes/site/nir_pid3469/client/images/THUMB_internal_Pipeline.jpg" alt="Pipeline" typeof="Image"/>    
+                                                    </div>
+                                                    <div class="post-content text-left">
+                                                        <div class="post-title">Explore our individualized immunotherapy pipeline</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-article-3 box-article item">
+                                    <div class="views-field views-field-view-node-1">
+                                        <span class="field-content">
+                                            <a urldocument="" urlextern="" href="https://web.archive.org/web/20201120123400/https://biontech.de/science/platforms">
+                                                <div class="post-block">
+                                                    <div class="post-image">
+                                                        <img src="/web/20201120123400im_/https://investors.biontech.de/sites/g/files/knoqqb50866/themes/site/nir_pid3469/client/images/THUMB_internal_Platforms.jpg" alt="Platforms" typeof="Image"/>    
+                                                    </div>
+                                                    <div class="post-content text-left">
+                                                        <div class="post-title">
+                                                            Tour our platforms that produce individually-tailored therapeutics
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-article-3 box-article item">
+                                    <div class="views-field views-field-view-node-1">
+                                        <span class="field-content">
+                                            <a urldocument="" urlextern="" href="https://web.archive.org/web/20201120123400/https://biontech.de/science/publications">
+                                                <div class="post-block">
+                                                    <div class="post-image">
+                                                        <img src="/web/20201120123400im_/https://investors.biontech.de/sites/g/files/knoqqb50866/themes/site/nir_pid3469/client/images/THUMB_internal_Publications.jpg" alt="Publications" typeof="Image"/>    
+                                                    </div>
+                                                    <div class="post-content text-left">
+                                                        <div class="post-title">Browse our research publications</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="views-element-container block block-views block-views-blocklist-post-menu-block-4 no-title" id="block-views-block-list-post-menu-block-4">
+                <div class="content block-content">
+                    <div>
+                        <div class="js-view-dom-id-e42610d125b785c3ecab38b0085aafa2ba4aeb84f545704054cddb819828524c">
+                            <div class="view-content-wrap">
+                                <div class="box-article-4 box-article item">
+                                    <div class="views-field views-field-view-node-1">
+                                        <span class="field-content">
+                                            <a urldocument="" urlextern="" href="https://web.archive.org/web/20201120123400/https://biontech.de/for-patients/info-resources">
+                                                <div class="post-block">
+                                                    <div class="post-image">
+                                                        <img src="/web/20201120123400im_/https://investors.biontech.de/sites/g/files/knoqqb50866/themes/site/nir_pid3469/client/images/THUMB_internal_Patient-Info-Resources.jpg" alt="Info &amp; Resources" typeof="Image"/>    
+                                                    </div>
+                                                    <div class="post-content text-left">
+                                                        <div class="post-title">
+                                                            Our Mission: broaden the therapeutic universe to benefit patients
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="box-article-4 box-article item">
+                                    <div class="views-field views-field-view-node-1">
+                                        <span class="field-content">
+                                            <a urldocument="" urlextern="" href="https://web.archive.org/web/20201120123400/https://biontech.de/for-patients/clinical-trials">
+                                                <div class="post-block">
+                                                    <div class="post-image">
+                                                        <img src="/web/20201120123400im_/https://investors.biontech.de/sites/g/files/knoqqb50866/themes/site/nir_pid3469/client/images/THUMB_internal_Clinical-Trials.jpg" alt="Clinical trials" typeof="Image"/>    
+                                                    </div>
+                                                    <div class="post-content text-left">
+                                                        <div class="post-title">Clinical trials currently ongoing</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    
+          <script type="text/javascript">var s_CCSWebHostingAccount = "trcgbiontechse";</script>
+        <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/8771","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en","themeUrl":"sites\/g\/files\/knoqqb50866\/themes\/site\/nir_pid3469"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"classy\/node,core\/html5shiv,nir_base\/adobe_omniture,nir_base\/nir_icons,nir_base\/nir_toolbar,nir_ckeditor_datatables\/datatables,nir_multimedia\/nir_multimedia,nir_pid3469\/client-footer,nir_pid3469\/client-header,nir_pid3469\/override,nir_pid3469\/vendor,nir_website_notices\/nir_website_notices.notices,system\/base","theme":"nir_pid3469","theme_token":null},"ajaxTrustedUrl":[],"user":{"uid":0,"permissionsHash":"fe519247fa47c1457dd915fb9b8babdd1576f517aa658cc0a7a481d4c35737b1"}}</script>
+<script src="/web/20201120123400js_/https://investors.biontech.de/sites/g/files/knoqqb50866/files/js/js_4kzEg8mF6kbOa6MyHnCvuq4j1zLR6FPrndXnzq656ks.js"></script>
+
+    
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"761e715901","applicationID":"32397309,24276188","transactionName":"ZlVXYRcAW0ZRW0QKX18fdFYRCFpbH3xCFkBQXGlbCgVQaXNXXhdCXlxZUBc9e1pUXWYKVUZzWlsRE1pZXF1CTg5HWVBC","queueTime":0,"applicationTime":702,"atts":"ShJUF18aSEg=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>
+<!--
+     FILE ARCHIVED ON 12:34:00 Nov 20, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:11:05 May 28, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 109.26
+  exclusion.robots: 0.176
+  exclusion.robots.policy: 0.169
+  RedisCDXSource: 1.528
+  esindex: 0.008
+  LoadShardBlock: 85.006 (3)
+  PetaboxLoader3.datanode: 65.021 (4)
+  CDXLines.iter: 18.566 (3)
+  load_resource: 171.185
+  PetaboxLoader3.resolve: 129.958
+-->

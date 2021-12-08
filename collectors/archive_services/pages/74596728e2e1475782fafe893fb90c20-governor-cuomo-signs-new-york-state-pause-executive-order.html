@@ -1,0 +1,2373 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app104.us.archive.org';v.server_ms=258;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=xTFGO54E" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=i68pdzR-" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://www.governor.ny.gov/news/governor-cuomo-signs-new-york-state-pause-executive-order","20210531035112","https://web.archive.org/","web","/_static/",
+	      "1622433072");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=omkqRugM" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <meta charset="utf-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"5246b5e79c",applicationID:"467331528"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(7),c=e(8),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(9);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e){return!(!e||!e.protocol||"file:"===e.protocol)}t.exports=r},{}],4:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(6),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],5:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],6:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],7:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],8:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],9:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(7),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=x.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+x.offset],null,"api")}var a=e(2),c=e("handle"),f=e(7),u=e("ee"),s=e(5),d=e(3),p=window,l=p.document,m="addEventListener",v="attachEvent",g=p.XMLHttpRequest,w=g&&g.prototype;if(d(p.location)){NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:g,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1208.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:b,userAgent:s};e(1),e(4),l[m]?(l[m]("DOMContentLoaded",o,!1),p[m]("load",r,!1)):(l[v]("onreadystatechange",i),p[v]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0}},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(8),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://web.archive.org/web/20210531035112/https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-1481478-59", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<link rel="canonical" href="https://web.archive.org/web/20210531035112/https://www.governor.ny.gov/news/governor-cuomo-signs-new-york-state-pause-executive-order"/>
+<meta name="description" content="Governor Cuomo announced he is signing the &quot;New York State on PAUSE&quot; executive order, a 10-point policy to assure uniform safety for everyone."/>
+<meta property="og:title" content="Governor Cuomo Signs the 'New York State on PAUSE' Executive Order"/>
+<meta property="og:description" content="Governor Cuomo announced he is signing the &quot;New York State on PAUSE&quot; executive order, a 10-point policy to assure uniform safety for everyone."/>
+<meta property="og:image" content="https://web.archive.org/web/20210531035112im_/https://www.governor.ny.gov/sites/default/files/styles/cover_image_660x400_/public/thumbnails/image/Coronavirus_COVID19_Briefing3_Mar20_1280.jpg?h=b5f6a62e&amp;itok=dMIRRQk5"/>
+<meta property="og:image:url" content="https://www.governor.ny.gov/sites/default/files/styles/cover_image_660x400_/public/thumbnails/image/Coronavirus_COVID19_Briefing3_Mar20_1280.jpg?h=b5f6a62e&amp;itok=dMIRRQk5"/>
+<meta property="og:image:secure_url" content="https://www.governor.ny.gov/profiles/contrib/nygov/themes/custom/nygov-theme/storybook/assets/nygov-logo-share.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:description" content="Governor Cuomo announced he is signing the &quot;New York State on PAUSE&quot; executive order, a 10-point policy to assure uniform safety for everyone."/>
+<meta name="twitter:title" content="Governor Cuomo Signs the 'New York State on PAUSE' Executive Order"/>
+<meta name="twitter:image" content="https://web.archive.org/web/20210531035112im_/https://www.governor.ny.gov/sites/default/files/styles/cover_image_660x400_/public/thumbnails/image/Coronavirus_COVID19_Briefing3_Mar20_1280.jpg?h=b5f6a62e&amp;itok=dMIRRQk5"/>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)"/>
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="shortcut icon" href="/web/20210531035112im_/https://www.governor.ny.gov/profiles/contrib/nygov/themes/custom/nygov-theme/nygov_theme/favicon.ico" type="image/vnd.microsoft.icon"/>
+<link rel="revision" href="https://www.governor.ny.gov/news/governor-cuomo-signs-new-york-state-pause-executive-order"/>
+<script src="/web/20210531035112js_/https://www.governor.ny.gov/sites/default/files/google_tag/governor/google_tag.script.js?qtp2jx" defer></script>
+
+    <title>Governor Cuomo Signs the &#039;New York State on PAUSE&#039; Executive Order</title>
+    <link rel="stylesheet" media="all" href="/web/20210531035112cs_/https://www.governor.ny.gov/sites/default/files/css/css_JdYfni8cVT24gR85NhIH2yX227_O810k8fuX96zYiYg.css"/>
+<link rel="stylesheet" media="all" href="/web/20210531035112cs_/https://www.governor.ny.gov/sites/default/files/css/css_uGc415HZy5cfZ28Am_ved7_rqmEQ42oqtAyRYbADTCA.css"/>
+<link rel="stylesheet" media="all" href="/web/20210531035112cs_/https://www.governor.ny.gov/profiles/contrib/nygov/themes/custom/nygov-theme/storybook/dist/styles.css?qtp2jx"/>
+<link rel="stylesheet" media="all" href="/web/20210531035112cs_/https://www.governor.ny.gov/sites/default/files/css/css_VVTXCNAM2TmIs7l0GV5r5saX2h4cyU2ojmllfmImvwY.css"/>
+<link rel="stylesheet" media="print" href="/web/20210531035112cs_/https://www.governor.ny.gov/sites/default/files/css/css_47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU.css"/>
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+  </head>
+  <body class="path-node page-node-type-news"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;">
+<div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="wm-ipp-inside">
+  <div style="position:relative;">
+    <div id="wm-logo" style="float:left;width:110px;padding-top:12px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="/_static/images/toolbar/wayback-toolbar-logo-100.png, /_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, /_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0" /></a>
+    </div>
+    <div class="r" style="float:right;">
+      <div id="wm-btns" style="text-align:right;height:25px;">
+                  <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="#"
+	     title="Share via My Web Archive" >
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php"
+             title="Sign In"
+             id="wm-sign-in"
+          >
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        	<a href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+	<a id="wm-tb-close" href="#close" onclick="__wm.h(event);return false;" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share">
+          <a href="/web/20210531035112/http://web.archive.org/screenshot/https://www.governor.ny.gov/news/governor-cuomo-signs-new-york-state-pause-executive-order"
+             id="wm-screenshot"
+             title="screenshot">
+            <span class="wm-icon-screen-shot"></span>
+          </a>
+          <a href="#"
+            id="wm-video"
+            title="video">
+            <span class="iconochive-movies"></span>
+          </a>
+	<a id="wm-share-facebook" href="#" data-url="https://web.archive.org/web/20210531035112/https://www.governor.ny.gov/news/governor-cuomo-signs-new-york-state-pause-executive-order" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+	<a id="wm-share-twitter" href="#" data-url="https://web.archive.org/web/20210531035112/https://www.governor.ny.gov/news/governor-cuomo-signs-new-york-state-pause-executive-order" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+    </div>
+    <table class="c" style="">
+      <tbody>
+	<tr>
+	  <td class="u" colspan="2">
+	    <form target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="https://www.governor.ny.gov/news/governor-cuomo-signs-new-york-state-pause-executive-order" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20210531035112" /><input type="submit" value="Go" /></form>
+	  </td>
+	  <td class="n" rowspan="2" style="width:110px;">
+	    <table>
+	      <tbody>
+		<!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+		<tr class="m">
+		  <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20210415085940/https://www.governor.ny.gov/news/governor-cuomo-signs-new-york-state-pause-executive-order" title="15 Apr 2021"><strong>Apr</strong></a></td>
+		  <td class="c" id="displayMonthEl" title="You are here: 03:51:12 May 31, 2021">MAY</td>
+		  <td class="f" nowrap="nowrap">Jun</td>
+		</tr>
+		<!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+		<tr class="d">
+		  <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20210515030857/https://www.governor.ny.gov/news/governor-cuomo-signs-new-york-state-pause-executive-order" title="03:08:57 May 15, 2021"><img src="/_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a></td>
+		  <td class="c" id="displayDayEl" style="width:34px;font-size:24px;white-space:nowrap;" title="You are here: 03:51:12 May 31, 2021">31</td>
+		  <td class="f" nowrap="nowrap"><img src="/_static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0" /></td>
+		</tr>
+		<!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+		<tr class="y">
+		  <td class="b" nowrap="nowrap"><a href="https://web.archive.org/web/20200530093650/https://www.governor.ny.gov/news/governor-cuomo-signs-new-york-state-pause-executive-order" title="30 May 2020"><strong>2020</strong></a></td>
+		  <td class="c" id="displayYearEl" title="You are here: 03:51:12 May 31, 2021">2021</td>
+		  <td class="f" nowrap="nowrap">2022</td>
+		</tr>
+	      </tbody>
+	    </table>
+	  </td>
+	</tr>
+	<tr>
+	  <td class="s">
+	    	    <div id="wm-nav-captures">
+	      	      <a class="t" href="/web/20210531035112*/https://www.governor.ny.gov/news/governor-cuomo-signs-new-york-state-pause-executive-order" title="See a list of every capture for this URL">492 captures</a>
+	      <div class="r" title="Timespan for captures of this URL">20 Mar 2020 - 31 May 2021</div>
+	      </div>
+	  </td>
+	  <td class="k">
+	    <a href="" id="wm-graph-anchor">
+	      <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+		<canvas id="wm-sparkline-canvas" width="650" height="27" border="0"></canvas>
+	      </div>
+	    </a>
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+    <div style="position:absolute;bottom:0;right:2px;text-align:right;">
+      <a id="wm-expand" class="wm-btn wm-closed" href="#expand" onclick="__wm.ex(event);return false;"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span style="font-size:80%">About this capture</span></a>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+                    <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/liveweb)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/liveweb" target="_new"><span class="wm-title">Live Web Proxy Crawls</span></a></div>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Content crawled via the <a href="http://archive.org/web/web.php">Wayback Machine</a> Live Proxy mostly by the Save Page Now feature on web.archive.org.
+<br><br>
+Liveweb proxy is a component of Internet Archive’s wayback machine project. The liveweb proxy captures the content of a web page in real time, archives it into a ARC or WARC file and returns the ARC/WARC record back to the wayback machine to process. The recorded ARC/WARC file becomes part of the wayback machine in due course of time.
+<br>
+	</div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="/_static/images/loading.gif" alt="loading" /></div>
+    </div>
+    </div>
+  </div></div></div></div><div id="wm-ipp-print">The Wayback Machine - https://web.archive.org/web/20210531035112/https://www.governor.ny.gov/news/governor-cuomo-signs-new-york-state-pause-executive-order</div>
+<div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=https%3A//web.archive.org/web/20210531035112/https%3A//www.governor.ny.gov/news/governor-cuomo-signs-new-york-state-pause-executive-order"
+	    scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><script type="text/javascript">
+__wm.bt(650,27,25,2,"web","https://www.governor.ny.gov/news/governor-cuomo-signs-new-york-state-pause-executive-order","20210531035112",1996,"/_static/",["/_static/css/banner-styles.css?v=omkqRugM","/_static/css/iconochive.css?v=qtvMKcIJ"], false);
+  __wm.rw(1);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+        <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+
+          <div id="nygov-universal-navigation" class="nygov-universal-container" data-iframe="true" data-updated="2014-11-07 08:30">
+        <noscript>
+            <iframe width="100%" height="86px" src="//web.archive.org/web/20210531035112if_/https://static-assets.ny.gov/load_global_menu/ajax?iframe=true" frameborder="0" style="border:none; overflow:hidden; width:100%; height:86px;" scrolling="no">
+                Your browser does not support iFrames
+            </iframe>
+        </noscript>
+        <script type="text/javascript">
+            var _NY = {
+                HOST: "static-assets.ny.gov",
+                BASE_HOST: "www.ny.gov",
+                hideSettings: false,
+                hideSearch: false
+            };
+            (function (document, bundle, head) {
+                head = document.getElementsByTagName('head')[0];
+                bundle = document.createElement('script');
+                bundle.type = 'text/javascript';
+                bundle.async = true;
+                bundle.src = "//web.archive.org/web/20210531035112/https://static-assets.ny.gov/sites/all/widgets/universal-navigation/js/dist/global-nav-bundle.js";
+                head.appendChild(bundle);
+            }(document));
+        </script>
+      </div>
+    
+    <noscript aria-hidden="true"><iframe src="https://web.archive.org/web/20210531035112if_/https://www.googletagmanager.com/ns.html?id=GTM-KNGTF7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+<div class="layout-container">
+
+  <header role="banner">
+    
+  </header>
+
+  
+  
+  
+  
+  
+
+      <div class="nygovernor-main-navigation">
+      <div class="mobile-nav">
+  <h2 class="o-governorGlobalMenu__title">
+   <a href="/web/20210531035112/https://www.governor.ny.gov/">
+    <span>
+     GOVERNOR &nbsp;
+     <span class="name">HOME</span>
+    </span>
+    <span class="icon-right-chevron"></span>
+   </a>
+  </h2>
+  <div class="o-governorGlobalMenu__menu">
+   <ul class="menu">
+    
+     
+     <li class="leaf">
+      <span class="menuItems closed">
+                 
+  <a href="/web/20210531035112/https://www.governor.ny.gov/news">Pressroom</a>
+              <span class="icon-right-chevron"></span>
+      </span>
+           </li>
+
+    
+     
+     <li class="leaf">
+      <span class="menuItems closed">
+                 
+  <a href="/web/20210531035112/https://www.governor.ny.gov/schedule">Schedule</a>
+              <span class="icon-right-chevron"></span>
+      </span>
+           </li>
+
+    
+     
+     <li class="leaf">
+      <span class="menuItems closed">
+                 
+  <a href="/web/20210531035112/https://www.governor.ny.gov/executive-orders">Executive Orders</a>
+              <span class="icon-right-chevron"></span>
+      </span>
+           </li>
+
+    
+     
+     <li class="leaf">
+      <span class="menuItems closed">
+               <span class="noLink">
+         Priorities
+        </span>
+              <span class="icon-right-chevron"></span>
+      </span>
+             <ul class="submenu">
+                 <li>
+          <span>
+             
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/protecting-rights-all-new-yorkers">Civil Rights</a>
+           <span class="icon-right-chevron"></span>
+          </span>
+         </li>
+                 <li>
+          <span>
+             
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/economic-and-community-revitalization">Community Revitalization</a>
+           <span class="icon-right-chevron"></span>
+          </span>
+         </li>
+                 <li>
+          <span>
+             
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/criminal-justice-reform">Criminal Justice</a>
+           <span class="icon-right-chevron"></span>
+          </span>
+         </li>
+                 <li>
+          <span>
+             
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/transforming-new-yorks-economy">Economic Development</a>
+           <span class="icon-right-chevron"></span>
+          </span>
+         </li>
+                 <li>
+          <span>
+             
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/expanding-access-education">Education</a>
+           <span class="icon-right-chevron"></span>
+          </span>
+         </li>
+                 <li>
+          <span>
+             
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/leading-climate-change-protecting-our-environment">Environment</a>
+           <span class="icon-right-chevron"></span>
+          </span>
+         </li>
+                 <li>
+          <span>
+             
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/new-york-students-against-gun-violence">Gun Safety</a>
+           <span class="icon-right-chevron"></span>
+          </span>
+         </li>
+                 <li>
+          <span>
+             
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/new-york-health-wellness">Health &amp; Wellness</a>
+           <span class="icon-right-chevron"></span>
+          </span>
+         </li>
+                 <li>
+          <span>
+             
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/investing-infrastructure">Infrastructure</a>
+           <span class="icon-right-chevron"></span>
+          </span>
+         </li>
+                 <li>
+          <span>
+             
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/advancing-lgbtq-equality">LGBTQ</a>
+           <span class="icon-right-chevron"></span>
+          </span>
+         </li>
+                 <li>
+          <span>
+             
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/new-york-s-promise-women">Women</a>
+           <span class="icon-right-chevron"></span>
+          </span>
+         </li>
+                 <li>
+          <span>
+             
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs">All Programs</a>
+           <span class="icon-right-chevron"></span>
+          </span>
+         </li>
+               </ul>
+           </li>
+
+    
+     
+     <li class="leaf">
+      <span class="menuItems closed">
+                 
+  <a href="/web/20210531035112/https://www.governor.ny.gov/legislation">Legislation</a>
+              <span class="icon-right-chevron"></span>
+      </span>
+           </li>
+
+    
+     
+     <li class="leaf">
+      <span class="menuItems closed">
+                 
+  <a href="/web/20210531035112/https://www.governor.ny.gov/about">About</a>
+              <span class="icon-right-chevron"></span>
+      </span>
+           </li>
+
+    
+     
+     <li class="leaf">
+      <span class="menuItems closed">
+                 
+  <a href="/web/20210531035112/https://www.governor.ny.gov/content/governor-contact-form">Contact</a>
+              <span class="icon-right-chevron"></span>
+      </span>
+           </li>
+
+       </ul>
+
+  </div>
+ </div>
+ <div class="o-governorGlobalMenu__wrapper">
+  <div class="o-governorGlobalMenu__offcanvas-trigger icon-bars"></div>
+  <h2 class="o-governorGlobalMenu__title">
+   <a href="/web/20210531035112/https://www.governor.ny.gov/">
+    GOVERNOR
+    <span class="name">ANDREW M. CUOMO</span>
+   </a>
+  </h2>
+  <div class="o-governorGlobalMenu__menu">
+   <ul class="menu">
+    
+     
+     <li class="leaf">
+               
+  <a href="/web/20210531035112/https://www.governor.ny.gov/news">Pressroom</a>
+                 </li>
+
+    
+     
+     <li class="leaf">
+               
+  <a href="/web/20210531035112/https://www.governor.ny.gov/schedule">Schedule</a>
+                 </li>
+
+    
+     
+     <li class="leaf">
+               
+  <a href="/web/20210531035112/https://www.governor.ny.gov/executive-orders">Executive Orders</a>
+                 </li>
+
+    
+     
+     <li class="leaf" tabindex="0">
+             <span class="noLink">
+        Priorities
+       </span>
+                   <ul class="submenu">
+                 <li>
+            
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/protecting-rights-all-new-yorkers">Civil Rights</a>
+         </li>
+                 <li>
+            
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/economic-and-community-revitalization">Community Revitalization</a>
+         </li>
+                 <li>
+            
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/criminal-justice-reform">Criminal Justice</a>
+         </li>
+                 <li>
+            
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/transforming-new-yorks-economy">Economic Development</a>
+         </li>
+                 <li>
+            
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/expanding-access-education">Education</a>
+         </li>
+                 <li>
+            
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/leading-climate-change-protecting-our-environment">Environment</a>
+         </li>
+                 <li>
+            
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/new-york-students-against-gun-violence">Gun Safety</a>
+         </li>
+                 <li>
+            
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/new-york-health-wellness">Health &amp; Wellness</a>
+         </li>
+                 <li>
+            
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/investing-infrastructure">Infrastructure</a>
+         </li>
+                 <li>
+            
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/advancing-lgbtq-equality">LGBTQ</a>
+         </li>
+                 <li>
+            
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs/new-york-s-promise-women">Women</a>
+         </li>
+                 <li>
+            
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs">All Programs</a>
+         </li>
+               </ul>
+           </li>
+
+    
+     
+     <li class="leaf">
+               
+  <a href="/web/20210531035112/https://www.governor.ny.gov/legislation">Legislation</a>
+                 </li>
+
+    
+     
+     <li class="leaf">
+               
+  <a href="/web/20210531035112/https://www.governor.ny.gov/about">About</a>
+                 </li>
+
+    
+     
+     <li class="leaf">
+               
+  <a href="/web/20210531035112/https://www.governor.ny.gov/content/governor-contact-form">Contact</a>
+                 </li>
+
+       </ul>
+
+  </div>
+ </div>
+    </div>
+  
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>
+    <div class="layout-content">
+        <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+<article role="article" class="node node--type-news node--view-mode-full">
+                 
+
+			
+
+
+
+
+
+
+	<style>
+		.o-hero .o-hero__wrapper {
+			background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url('https://web.archive.org/web/20210531035112im_/https://www.governor.ny.gov/sites/default/files/styles/hero_mobile/public/thumbnails/image/Coronavirus_COVID19_Briefing3_Mar20_1280.jpg?h=b5f6a62e&itok=G9G9tGSH');
+		}
+		.o-hero.-noImage .o-hero__wrapper {
+			background-image: url('/web/20210531035112im_/https://www.governor.ny.gov/news/governor-cuomo-signs-new-york-state-pause-executive-order');
+		}
+		@media(min-width: 768px) {
+			.o-hero .o-hero__wrapper {
+				background-image: linear-gradient(to right,#000,rgba(0,0,0,0.25) 75%,rgba(0,0,0,0)), url('https://web.archive.org/web/20210531035112im_/https://www.governor.ny.gov/sites/default/files/styles/hero_narrow/public/thumbnails/image/Coronavirus_COVID19_Briefing3_Mar20_1280.jpg?h=b5f6a62e&itok=_cKDS_d0');
+			}
+		}
+		@media(min-width: 1024px) {
+			.o-hero .o-hero__wrapper {
+				background-image: linear-gradient(to right,#000,rgba(0,0,0,0.25) 75%,rgba(0,0,0,0)), url('https://web.archive.org/web/20210531035112im_/https://www.governor.ny.gov/sites/default/files/styles/hero_wide/public/thumbnails/image/Coronavirus_COVID19_Briefing3_Mar20_1280.jpg?h=b5f6a62e&itok=wZlkdaHd');
+			}
+		}
+	</style>
+
+	<div class="o-hero -newsPage">
+		<div class="o-hero__wrapper">
+			
+
+
+
+
+
+
+	
+	<div class="bg-black text-white m-hero__meta -newsHero">
+					<div class="m-newsHero__dateLocation">
+									<div class="m-newsHero__dateCreated">
+						  <span class="a-date text-extra-bold a-hero__date">March 20, 2020</span>
+					</div>
+													<div class="m-dateLocation__separator"></div>
+													<div class="m-newsHero__location">
+						
+
+  <div class="a-text__string ">Albany, NY</div>
+
+					</div>
+							</div>
+				<div class="m-newsHero__title">
+				<h1 class="a-title ">
+    Governor Cuomo Signs the &#039;New York State on PAUSE&#039; Executive Order
+  </h1>
+
+
+		</div>
+					<div class="m-newsHero__keyword">
+									<div class="m-newsHero__tags">
+						  
+    <a class="a-hero__link" href="/web/20210531035112/https://www.governor.ny.gov/keywords/coronavirus">Coronavirus</a>
+					</div>
+									<div class="m-newsHero__tags">
+						  
+    <a class="a-hero__link" href="/web/20210531035112/https://www.governor.ny.gov/keywords/health">Health</a>
+					</div>
+									<div class="m-newsHero__tags">
+						  
+    <a class="a-hero__link" href="/web/20210531035112/https://www.governor.ny.gov/keywords/public-safety">Public Safety</a>
+					</div>
+							</div>
+			</div>
+
+
+
+		</div>
+		<div class="m-separator -wrapper -waypoint -anchor">
+
+  <div class="m-separator -content">
+
+    <div class="m-separator -backToTopTitle">
+      <div class="m-separator -backToTop">
+        <div class="m-separator -backToTop -text">TOP</div>
+        <div class="m-separator -backToTop -icon">
+          
+
+  <span class="fas fa-sort-up" aria-hidden="true"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="m-separator -title">
+        <span class="line-clamp-1">Governor Cuomo Signs the &#039;New York State on PAUSE&#039; Executive Order</span>
+      </div>
+    </div>
+
+    <div class="m-separator -shareBar">
+      <span class="m-separator -shareText">Share</span>
+      <span class="m-separator -icon">
+        <a aria-label="email" href="/web/20210531035112/https://www.governor.ny.gov/cdn-cgi/l/email-protection#546b2721363e31372069133b2231263a3b267417213b393b74073d333a2774203c3174727764676d6f1a3123740d3b263f740720352031743b3a740415010711727764676d6f74112c313721203d2231741b26303126723539246f363b302d693c202024276e7b7b2323237a333b2231263a3b267a3a2d7a333b227b3a3123277b333b2231263a3b267937213b393b79273d333a27793a3123792d3b263f79272035203179243521273179312c313721203d2231793b26303126">
+          
+
+
+
+
+
+
+
+
+
+
+  <span class="fas fa-envelope" aria-hidden="true"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </a>
+      </span>
+      <span class="m-separator -icon">
+        <a aria-label="facebook" href="https://web.archive.org/web/20210531035112/http://www.facebook.com/share.php?u=https://www.governor.ny.gov/news/governor-cuomo-signs-new-york-state-pause-executive-order">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<span class="fab fa-facebook-f" aria-hidden="true"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </a>
+      </span>
+      <span class="m-separator -icon">
+        <a aria-label="twitter" href="https://web.archive.org/web/20210531035112/https://twitter.com/intent/tweet?text=Governor Cuomo Signs the 'New York State on PAUSE' Executive Order&amp;url=https://www.governor.ny.gov/news/governor-cuomo-signs-new-york-state-pause-executive-order">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<span class="fab fa-twitter" aria-hidden="true"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </a>
+      </span>
+    </div>
+
+  </div>
+</div>
+	</div>
+
+
+
+
+	<div class="p-subheadline">
+		<p>10-Point Policy that Assures Uniform Safety for Everyone</p>
+<p>100% Closure of Non-Essential Businesses Statewide, Effective 8pm Sunday — Exceptions Made For Essential Services Such as Groceries and Healthcare</p>
+<p>"Matilda's Law" Will Provide New Protections for Most Vulnerable Populations - New Yorkers Age 70 and Older, People with Compromised Immune Systems and Those With Underlying Illnesses</p>
+<p>Directs 90-Day Moratorium on Any Residential or Commercial Evictions</p>
+<p>Asks PPE Product Providers to Sell Non-Essential Products to the State and Encourages Companies to Begin Manufacturing PPE Products</p>
+<p>Confirms 2,950 Additional Coronavirus Cases in New York State - Bringing Statewide Total to 7,102; New Cases in 23 Counties</p>
+
+	</div>
+
+<div class="p-news__wrapper">
+	
+	<div class="t-section -container">
+		
+    
+    
+    
+		
+    
+		
+		
+		
+				
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    
+    
+    			<div class="t-section__content">
+				
+
+<div class="o-jazzed-release">
+  <div class="o-jazzed-release__content-wrapper">
+          <div class="o-jazzed-release__wysiwyg1 o-wysiwyg o-jazzed-release__responsive_table_0">
+        
+  <div class="a-text__html o-jazzed-release__wysiwyg1"><p>Governor Andrew M. Cuomo today announced he is signing the "New York State on PAUSE" executive order, a 10-point policy to assure uniform safety for everyone. It includes a new directive that all non-essential businesses statewide must close in-office personnel functions effective at 8PM on Sunday, March 22, and temporarily bans all non-essential gatherings of individuals of any size for any reason.</p>
+
+<p>Governor Cuomo also announced "Matilda's Law" - named for the Governor's mother - to protect New York's most vulnerable populations, including individuals age 70 and older, those with compromised immune systems and those with underlying illnesses. The measure requires this group of New Yorkers to stay home and limit home visitation to immediate family members or close friends in need of emergency assistance. If it is necessary to visit such individuals, the visitor should get prescreened by taking temperature and seeing if person is exhibiting other flu-like symptoms. Both individuals should wear a mask for the duration of the visit.</p>
+</div>
+
+
+      </div>
+    
+          <div class="o-jazzed-release__videoEmbed">
+            
+<div class="m-video">
+  
+  
+  <div class="m-video__videoWrapper">
+    <iframe style="" width="100%" height="400" src="https://web.archive.org/web/20210531035112if_/https://www.youtube.com/embed/XxA4HL-I8sc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+</div>
+<div class="m-video__print">
+  https://www.youtube.com/embed/XxA4HL-I8sc
+</div>
+
+      </div>
+    
+    			<div class="o-jazzed-release__audio-photos-buttons">
+				            
+    <a class="a-audio-photo__link" href="https://web.archive.org/web/20210531035112/https://soundcloud.com/nygovcuomo/governor-cuomo-makes-an-announcement-032020" target="&quot;_blank&quot;">Audio</a>
+        
+                    
+    <a class="a-audio-photo__link" href="https://web.archive.org/web/20210531035112/https://www.flickr.com/photos/governorandrewcuomo/albums/72157713556049338" target="&quot;_blank&quot;">Photos</a>
+        
+        			</div>
+    
+          <div class="o-jazzed-release__wysiwyg2 o-wysiwyg o-jazzed-release__responsive_table_0">
+        
+  <div class="a-text__html o-jazzed-release__wysiwyg2"><p>The Governor also announced a 90-day moratorium on any residential or commercial evictions.</p>
+
+<p>Additionally, amid a shortage of personal protective equipment — or PPE — products in the state, including gloves, masks and gowns, the Governor is asking all PPE product providers to sell to the state any products that are not essential or not currently being used. Businesses interested in selling products to the state should contact Simonida Subotic at 646-522-8477 or <a href="/web/20210531035112/https://www.governor.ny.gov/cdn-cgi/l/email-protection#3e5d5148575a0f074d4b4e4e52575b4d7e5b465b5d10504710595148"><span class="__cf_email__" data-cfemail="1e7d7168777a2f276d6b6e6e72777b6d5e7b667b7d30706730797168">[email&#160;protected]</span></a>.</p>
+
+<p>The Governor is also encouraging any company with the proper equipment or personnel to begin to manufacture PPE products if possible. The state is willing to provide funding to any company to obtain the proper equipment and personnel. Businesses interested in receiving state funding to manufacture PPE products should contact EricGertler at 212-803-3100 or <a href="/web/20210531035112/https://www.governor.ny.gov/cdn-cgi/l/email-protection#b5f6fae3fcf1848cc6c0c5c5d9dcd0c6f5d0c6d19bdbcc9bd2dac3"><span class="__cf_email__" data-cfemail="377478617e73060e444247475b5e52447752445319594e19505841">[email&#160;protected]</span></a>.</p>
+</div>
+
+
+      </div>
+    
+          <div class="o-quote">
+        <div class="o-quote__content-wrapper">
+          <span class="fas fa-quote-left"></span>
+          <div class="o-quote__description"><p>We know the most effective way to reduce the spread of this virus is through social distancing and density reduction measures.</p>
+</div>
+          <div class="o-quote__credit">Governor Andrew M. Cuomo</div>
+        </div>
+      </div>
+    
+          <div class="o-jazzed-release__wysiwyg3 o-wysiwyg o-jazzed-release__responsive_table_0">
+        
+  <div class="a-text__html o-jazzed-release__wysiwyg3"><p>"We know the most effective way to reduce the spread of this virus is through social distancing and density reduction measures," Governor Cuomo said. "I have said from the start that any policy decision we make will be based on the facts, and as we get more facts we will calibrate our response accordingly. This executive order builds on the actions we have taken to reduce the spread of the virus and protect the wellbeing of our friends, colleagues and neighbors. But again, I want to remind New Yorkers that the panic we are seeing is outpacing the reality of the virus — and we will get through this period of time together."</p>
+
+<p>The Governor's 10-point NYS on PAUSE plan is as follows:</p>
+
+<ol>
+	<li>Effective at 8PM on Sunday, March 22, all non-essential businesses statewide will be closed;</li>
+	<li>Non-essential gatherings of individuals of any size for any reason (e.g. parties, celebrations or other social events) are canceled or postponed at this time;</li>
+	<li>Any concentration of individuals outside their home must be limited to workers providing essential services and social distancing should be practiced;</li>
+	<li>When in public individuals must practice social distancing of at least six feet from others;</li>
+	<li>Businesses and entities that provide other essential services must implement rules that help facilitate social distancing of at least six feet;</li>
+	<li>Individuals should limit outdoor recreational activities to non-contact and avoid activities where they come in close contact with other people;</li>
+	<li>Individuals should limit use of public transportation to when absolutely necessary and should limit potential exposure by spacing out at least six feet from other riders;</li>
+	<li>Sick individuals should not leave their home unless to receive medical care and only after a telehealth visit to determine if leaving the home is in the best interest of their health;</li>
+	<li>Young people should also practice social distancing and avoid contact with vulnerable populations; and</li>
+	<li>Use precautionary sanitizer practices such as using isopropyl alcohol wipes.</li>
+</ol>
+
+<p>"Matilda's Law" includes the following rules for vulnerable populations:</p>
+
+<ul>
+	<li>Remain indoors;</li>
+	<li>Can go outside for solitary exercise;</li>
+	<li>Pre-screen all visitors and aides by taking their temperature and seeing if person is exhibiting other flu-like symptoms;</li>
+	<li>Do not visit households with multiple people;</li>
+	<li>Wear a mask when in the company of others;</li>
+	<li>To the greatest extent possible, everyone in the presence of vulnerable people should wear a mask;</li>
+	<li>Always stay at least six feet away from individuals; and</li>
+	<li>Do not take public transportation unless urgent and absolutely necessary.</li>
+</ul>
+</div>
+
+
+      </div>
+    
+          <div class="o-jazzed-release__flikr-embed">
+        <a data-flickr-embed="true" data-header="true" data-footer="true" href="https://web.archive.org/web/20210531035112/https://www.flickr.com/photos/governorandrewcuomo/albums/72157713556049338" title="Governor Cuomo Makes an Announcement 3-20-20"><img src="https://web.archive.org/web/20210531035112im_/https://live.staticflickr.com/65535/49679617718_c04853dbcb_z.jpg" width="640" height="427" alt="Governor Cuomo Makes an Announcement 3-20-20"></a><script data-cfasync="false" src="/web/20210531035112js_/https://www.governor.ny.gov/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async src="//web.archive.org/web/20210531035112js_/https://embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+      </div>
+    
+          <div class="o-jazzed-release__wysiwyg4 o-wysiwyg o-jazzed-release__responsive_table_0">
+        
+  <div class="a-text__html o-jazzed-release__wysiwyg4"><p>Finally, the Governor confirmed 2,950 additional cases of novel coronavirus, bringing the statewide total to 7,102 confirmed cases in New York State. Of the 7,102 total individuals who tested positive for the virus, the geographic breakdown is as follows:</p>
+
+<table id="docx4j_tbl_0">
+	<colgroup>
+	</colgroup>
+	<tbody>
+		<tr>
+			<td>
+			<p>County</p>
+			</td>
+			<td>
+			<p>Total Positive</p>
+			</td>
+			<td>
+			<p>New Positive</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Albany County</p>
+			</td>
+			<td>
+			<p>61</p>
+			</td>
+			<td>
+			<p>18</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Allegany County</p>
+			</td>
+			<td>
+			<p>2</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Broome County</p>
+			</td>
+			<td>
+			<p>2</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Chenango County</p>
+			</td>
+			<td>
+			<p>2</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Clinton County</p>
+			</td>
+			<td>
+			<p>2</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Columbia County</p>
+			</td>
+			<td>
+			<p>1</p>
+			</td>
+			<td>
+			<p>1</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Delaware County</p>
+			</td>
+			<td>
+			<p>1</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Dutchess County</p>
+			</td>
+			<td>
+			<p>36</p>
+			</td>
+			<td>
+			<p>5</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Erie County</p>
+			</td>
+			<td>
+			<p>31</p>
+			</td>
+			<td>
+			<p>3</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Essex County</p>
+			</td>
+			<td>
+			<p>1</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Fulton County</p>
+			</td>
+			<td>
+			<p>1</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Genesee County</p>
+			</td>
+			<td>
+			<p>1</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Greene County</p>
+			</td>
+			<td>
+			<p>2</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Hamilton County</p>
+			</td>
+			<td>
+			<p>2</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Herkimer County</p>
+			</td>
+			<td>
+			<p>2</p>
+			</td>
+			<td>
+			<p>1</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Jefferson County</p>
+			</td>
+			<td>
+			<p>1</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Livingston County</p>
+			</td>
+			<td>
+			<p>1</p>
+			</td>
+			<td>
+			<p>1</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Monroe County</p>
+			</td>
+			<td>
+			<p>32</p>
+			</td>
+			<td>
+			<p>5</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Montgomery County</p>
+			</td>
+			<td>
+			<p>2</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Nassau County</p>
+			</td>
+			<td>
+			<p>754</p>
+			</td>
+			<td>
+			<p>382</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Niagara County</p>
+			</td>
+			<td>
+			<p>3</p>
+			</td>
+			<td>
+			<p>2</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>New York City</p>
+			</td>
+			<td>
+			<p>4408</p>
+			</td>
+			<td>
+			<p>1939</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Oneida County</p>
+			</td>
+			<td>
+			<p>2</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Onondaga County</p>
+			</td>
+			<td>
+			<p>8</p>
+			</td>
+			<td>
+			<p>3</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Ontario County</p>
+			</td>
+			<td>
+			<p>3</p>
+			</td>
+			<td>
+			<p>2</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Orange County</p>
+			</td>
+			<td>
+			<p>84</p>
+			</td>
+			<td>
+			<p>33</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Putnam County</p>
+			</td>
+			<td>
+			<p>7</p>
+			</td>
+			<td>
+			<p>2</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Rensselaer County</p>
+			</td>
+			<td>
+			<p>8</p>
+			</td>
+			<td>
+			<p>2</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Rockland County</p>
+			</td>
+			<td>
+			<p>101</p>
+			</td>
+			<td>
+			<p>48</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Saratoga County</p>
+			</td>
+			<td>
+			<p>24</p>
+			</td>
+			<td>
+			<p>6</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Schenectady County</p>
+			</td>
+			<td>
+			<p>21</p>
+			</td>
+			<td>
+			<p>3</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Schoharie County</p>
+			</td>
+			<td>
+			<p>1</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Suffolk County</p>
+			</td>
+			<td>
+			<p>371</p>
+			</td>
+			<td>
+			<p>193</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Sullivan County</p>
+			</td>
+			<td>
+			<p>8</p>
+			</td>
+			<td>
+			<p>5</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Tioga County</p>
+			</td>
+			<td>
+			<p>1</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Tompkins County</p>
+			</td>
+			<td>
+			<p>7</p>
+			</td>
+			<td>
+			<p>1</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Ulster County</p>
+			</td>
+			<td>
+			<p>12</p>
+			</td>
+			<td>
+			<p>2</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Warren County</p>
+			</td>
+			<td>
+			<p>1</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Washington County</p>
+			</td>
+			<td>
+			<p>1</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Wayne County</p>
+			</td>
+			<td>
+			<p>1</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Westchester County</p>
+			</td>
+			<td>
+			<p>1091</p>
+			</td>
+			<td>
+			<p>293</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<p>Wyoming County</p>
+			</td>
+			<td>
+			<p>2</p>
+			</td>
+			<td>
+			<p>0</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+
+      </div>
+    
+    
+    
+  </div>
+</div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", basicTable, false);
+    function basicTable() {
+      jQuery(".o-jazzed-release__responsive_table_0 table").each(function(){
+        jQuery(this).basictable();
+      })
+    }
+  </script>
+			</div>
+		
+    
+    
+    
+
+	</div>
+
+	<div class="t-section -container">
+		
+    
+    
+    
+		
+    
+		
+		
+		
+				
+		
+		
+		
+		
+					<div class="t-section__content">
+				
+
+<div class="o-contact__wrapper ">
+	<div class="o-contact__container">
+		
+	<h2 class="a-title a-contact__title">
+    Contact the Governor&#039;s Press Office 
+  </h2>
+
+		
+  <div class="a-text__html a-contact__description"></div>
+
+
+
+					<div class="o-contact__phone-email-container">
+									<div class="o-contact__phone o-contact__contact-info">
+						
+	<h2 class="a-title a-contact__phoneTitle">
+    Contact us by phone:
+  </h2>
+
+						
+  <div class="a-text__html a-contactDetail">Albany: (518) 474 - 8418<br/>New York City: (212) 681 - 4640</div>
+
+
+					</div>
+				
+									<div class="o-contact__email o-contact__contact-info">
+						
+	<h2 class="a-title a-contact__emailTitle">
+    Contact us by email:
+  </h2>
+
+						  
+    <a class="a-contactDetail" href="/web/20210531035112/https://www.governor.ny.gov/cdn-cgi/l/email-protection#a1f1d3c4d2d28feec7c7c8c2c4e1c4d9c4c28fcfd88fc6ced7"><span class="__cf_email__" data-cfemail="cf9fbdaabcbce180a9a9a6acaa8faab7aaace1a1b6e1a8a0b9">[email&#160;protected]</span></a>
+					</div>
+				
+        
+			</div>
+		
+		
+		
+
+	</div>
+</div>
+
+			</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    
+    
+    
+    
+    
+    
+
+	</div>
+
+	<div class="t-section -container">
+		
+    
+    
+    
+		
+    
+		
+		
+		
+				
+		
+					<div class="t-section__content">
+				
+<div class="o-translatedDocuments ">
+  <h2 class="a-frame__title">Translations</h2>
+      <div class="m-document ">
+  
+	<span class="fas fa-file-alt a-file -icon" aria-hidden="true"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="m-document__titles">
+    <div class="englishTitle">
+        
+  <a href="https://web.archive.org/web/20210531035112/https://www.governor.ny.gov/sites/default/files/atoms/files/03.20.20.rel_.ON%20PAUSE_Bengali.pdf" target="&quot;_blank&quot;">Bengali Translation</a>
+    </div>
+        <div class="translated-title">
+      বাংলা অনুবাদ
+    </div>
+          </div>
+  <a class="m-document__download -link" href="https://web.archive.org/web/20210531035112/https://www.governor.ny.gov/sites/default/files/atoms/files/03.20.20.rel_.ON%20PAUSE_Bengali.pdf" target="_blank">
+    
+
+
+
+	<span class="fas fa-download a-download -icon" aria-hidden="true"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="m-document__download__text">Download</span>
+  </a>
+</div>
+      <div class="m-document ">
+  
+	<span class="fas fa-file-alt a-file -icon" aria-hidden="true"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="m-document__titles">
+    <div class="englishTitle">
+        
+  <a href="https://web.archive.org/web/20210531035112/https://www.governor.ny.gov/sites/default/files/atoms/files/03.20.20.rel_.ON%20PAUSE_Chinese.pdf" target="&quot;_blank&quot;">Chinese Translation</a>
+    </div>
+        <div class="translated-title">
+      中文翻譯
+    </div>
+          </div>
+  <a class="m-document__download -link" href="https://web.archive.org/web/20210531035112/https://www.governor.ny.gov/sites/default/files/atoms/files/03.20.20.rel_.ON%20PAUSE_Chinese.pdf" target="_blank">
+    
+
+
+
+	<span class="fas fa-download a-download -icon" aria-hidden="true"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="m-document__download__text">Download</span>
+  </a>
+</div>
+      <div class="m-document ">
+  
+	<span class="fas fa-file-alt a-file -icon" aria-hidden="true"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="m-document__titles">
+    <div class="englishTitle">
+        
+  <a href="https://web.archive.org/web/20210531035112/https://www.governor.ny.gov/sites/default/files/atoms/files/03.20.20.rel_.ON%20PAUSE_HaitianCreole.pdf" target="&quot;_blank&quot;">Haitian-Creole Translation</a>
+    </div>
+        <div class="translated-title">
+      Tradiksyon kreyòl ayisyen
+    </div>
+          </div>
+  <a class="m-document__download -link" href="https://web.archive.org/web/20210531035112/https://www.governor.ny.gov/sites/default/files/atoms/files/03.20.20.rel_.ON%20PAUSE_HaitianCreole.pdf" target="_blank">
+    
+
+
+
+	<span class="fas fa-download a-download -icon" aria-hidden="true"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="m-document__download__text">Download</span>
+  </a>
+</div>
+      <div class="m-document ">
+  
+	<span class="fas fa-file-alt a-file -icon" aria-hidden="true"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="m-document__titles">
+    <div class="englishTitle">
+        
+  <a href="https://web.archive.org/web/20210531035112/https://www.governor.ny.gov/sites/default/files/atoms/files/03.20.20.rel_.ON%20PAUSE_Korean.pdf" target="&quot;_blank&quot;">Korean Translation</a>
+    </div>
+        <div class="translated-title">
+      한국어 번역
+    </div>
+          </div>
+  <a class="m-document__download -link" href="https://web.archive.org/web/20210531035112/https://www.governor.ny.gov/sites/default/files/atoms/files/03.20.20.rel_.ON%20PAUSE_Korean.pdf" target="_blank">
+    
+
+
+
+	<span class="fas fa-download a-download -icon" aria-hidden="true"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="m-document__download__text">Download</span>
+  </a>
+</div>
+      <div class="m-document ">
+  
+	<span class="fas fa-file-alt a-file -icon" aria-hidden="true"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="m-document__titles">
+    <div class="englishTitle">
+        
+  <a href="https://web.archive.org/web/20210531035112/https://www.governor.ny.gov/sites/default/files/atoms/files/03.20.20.rel_.ON%20PAUSE_Russian.pdf" target="&quot;_blank&quot;">Russian Translation</a>
+    </div>
+        <div class="translated-title">
+      Перевод на русский язык
+    </div>
+          </div>
+  <a class="m-document__download -link" href="https://web.archive.org/web/20210531035112/https://www.governor.ny.gov/sites/default/files/atoms/files/03.20.20.rel_.ON%20PAUSE_Russian.pdf" target="_blank">
+    
+
+
+
+	<span class="fas fa-download a-download -icon" aria-hidden="true"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="m-document__download__text">Download</span>
+  </a>
+</div>
+      <div class="m-document ">
+  
+	<span class="fas fa-file-alt a-file -icon" aria-hidden="true"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="m-document__titles">
+    <div class="englishTitle">
+        
+  <a href="https://web.archive.org/web/20210531035112/https://www.governor.ny.gov/sites/default/files/atoms/files/03.20.20.rel_.ON%20PAUSE_Spanish.pdf" target="&quot;_blank&quot;">Spanish Translation</a>
+    </div>
+        <div class="translated-title">
+      Traducción al español
+    </div>
+          </div>
+  <a class="m-document__download -link" href="https://web.archive.org/web/20210531035112/https://www.governor.ny.gov/sites/default/files/atoms/files/03.20.20.rel_.ON%20PAUSE_Spanish.pdf" target="_blank">
+    
+
+
+
+	<span class="fas fa-download a-download -icon" aria-hidden="true"></span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="m-document__download__text">Download</span>
+  </a>
+</div>
+  </div>
+			</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    
+    
+    
+    
+    
+    
+
+	</div>
+</div>
+        </article>
+
+  </div>
+
+    </div>
+  </main>
+
+  
+        
+  <div class="footer-navigations">
+    <div class="o-footerMenu__wrapper">
+  <h2 class="o-footerMenu__title">Governor Andrew M. Cuomo</h2>
+
+  <ul class="o-footerMenu__links">
+          <li class="o-footerMenu__link">
+          
+  <a href="/web/20210531035112/https://www.governor.ny.gov/about">About</a>
+      </li>
+          <li class="o-footerMenu__link">
+          
+  <a href="/web/20210531035112/https://www.governor.ny.gov/accessibility">Accessibility</a>
+      </li>
+          <li class="o-footerMenu__link">
+          
+  <a href="/web/20210531035112/https://www.governor.ny.gov/content/governor-contact-form">Contact</a>
+      </li>
+          <li class="o-footerMenu__link">
+          
+  <a href="/web/20210531035112/https://www.governor.ny.gov/website-disclaimer">Disclaimer</a>
+      </li>
+          <li class="o-footerMenu__link">
+          
+  <a href="/web/20210531035112/https://www.governor.ny.gov/executive-orders">Executive Orders</a>
+      </li>
+          <li class="o-footerMenu__link">
+          
+  <a href="/web/20210531035112/https://www.governor.ny.gov/freedom-information-law-foil-requests">Freedom of Information Law (FOIL)</a>
+      </li>
+          <li class="o-footerMenu__link">
+          
+  <a href="/web/20210531035112/https://www.governor.ny.gov/programs">Governor&#039;s Programs</a>
+      </li>
+          <li class="o-footerMenu__link">
+          
+  <a href="/web/20210531035112/https://www.governor.ny.gov/judicial-screening">Judicial Screening</a>
+      </li>
+          <li class="o-footerMenu__link">
+          
+  <a href="https://web.archive.org/web/20210531035112/https://www.ny.gov/language-access-policy">Language Access</a>
+      </li>
+          <li class="o-footerMenu__link">
+          
+  <a href="/web/20210531035112/https://www.governor.ny.gov/legislation">Legislation</a>
+      </li>
+          <li class="o-footerMenu__link">
+          
+  <a href="/web/20210531035112/https://www.governor.ny.gov/news">Pressroom</a>
+      </li>
+          <li class="o-footerMenu__link">
+          
+  <a href="/web/20210531035112/https://www.governor.ny.gov/privacy-policy">Privacy Policy</a>
+      </li>
+          <li class="o-footerMenu__link">
+          
+  <a href="/web/20210531035112/https://www.governor.ny.gov/schedule">Schedule</a>
+      </li>
+      </ul>
+
+</div>    <div class="o-connectFooterMenu">
+  <div class="o-connectFooterMenu__title">CONNECT WITH US</div>
+  <div class="o-connectFooterMenu__wrapper">
+    <div class="o-connectFooterMenu__socials">
+
+                    
+          
+                                              <div class="o-connectFooterMenu__socialLink -first">
+                <a class="m-socialLink__link text-bold" href="https://web.archive.org/web/20210531035112/https://www.facebook.com/GovernorAndrewCuomo">
+  <span class="m-socialLink__icon icon-facebook text-primary-light-blue"></span>
+  <span class="m-socialLink__linkText text-extra-bold">facebook</span>
+</a>              </div>
+                                                                                                                                                                                                                                                                                                                                                    
+          
+                                                                    <div class="o-connectFooterMenu__socialLink">
+                <a class="m-socialLink__link text-bold" href="https://web.archive.org/web/20210531035112/https://twitter.com/NYGovCuomo">
+  <span class="m-socialLink__icon icon-twitter text-primary-light-blue"></span>
+  <span class="m-socialLink__linkText text-extra-bold">twitter</span>
+</a>              </div>
+                                                                                                                                                                                                                                                                                                                              
+          
+                                                                                          <div class="o-connectFooterMenu__socialLink">
+                <a class="m-socialLink__link text-bold" href="https://web.archive.org/web/20210531035112/https://www.youtube.com/nygovcuomo">
+  <span class="m-socialLink__icon icon-youtube text-primary-light-blue"></span>
+  <span class="m-socialLink__linkText text-extra-bold">youtube</span>
+</a>              </div>
+                                                                                                                                                                                                                                                                                                        
+          
+                                                                                                                                      <div class="o-connectFooterMenu__socialLink">
+                <a class="m-socialLink__link text-bold" href="https://web.archive.org/web/20210531035112/https://www.flickr.com/photos/governorandrewcuomo/">
+  <span class="m-socialLink__icon icon-flickr text-primary-light-blue"></span>
+  <span class="m-socialLink__linkText text-extra-bold">flickr</span>
+</a>              </div>
+                                                                                                                                                                                                                                                            
+          
+                                                                                                                <div class="o-connectFooterMenu__socialLink -last">
+                <a class="m-socialLink__link text-bold" href="https://web.archive.org/web/20210531035112/http://instagram.com/nygovcuomo">
+  <span class="m-socialLink__icon icon-instagram text-primary-light-blue"></span>
+  <span class="m-socialLink__linkText text-extra-bold">instagram</span>
+</a>              </div>
+                                                                                                                                                                                                                                                                                
+    </div>
+  </div>
+</div>
+  </div>
+
+  
+
+  <div class="nygov-back-to-top nygov-back-to-top-hidden"><span class="fa fa-chevron-up" aria-hidden="true"></span></div>
+
+</div>
+  </div>
+
+    
+    <div id="o-exitModal">
+  <a href="#" class="o-exitModal__close icon-times-circle" title="Close this modal"></a>
+  <header id="o-exitModal__label">You are leaving the official State of New York website.</header>
+  <div class="o-exitModal__content">
+   The State of New York does not imply approval of the listed destinations, warrant the accuracy of any information set out in those destinations, or endorse any opinions expressed therein. External web sites operate at the direction of their respective owners who should be contacted directly with questions regarding the content of these sites.
+  </div>
+  <a href="#" class="o-exitModal__button">Visit Site</a>
+</div>
+    <script data-cfasync="false" src="/web/20210531035112js_/https://www.governor.ny.gov/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/66151","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"site_hostname":"www.governor.ny.gov","user":{"uid":0,"permissionsHash":"aeb20e10e27fb632f7c86d1941d66ee6091237e34d534c1a1810b885661c87ad"}}</script>
+<script src="/web/20210531035112js_/https://www.governor.ny.gov/sites/default/files/js/js_Yh0IDlDdarpNaybW8Fdd9xc_3-wUxFsJ8AHVpRSgVvw.js"></script>
+<script src="/web/20210531035112js_/https://www.governor.ny.gov/libraries/waypoints/lib/jquery.waypoints.min.js?qtp2jx"></script>
+<script src="/web/20210531035112js_/https://www.governor.ny.gov/libraries/waypoints/lib/noframework.waypoints.js?qtp2jx"></script>
+<script src="/web/20210531035112js_/https://www.governor.ny.gov/profiles/contrib/nygov/themes/custom/nygov-theme/nygov_theme/js/vendor/basictable.js?qtp2jx"></script>
+<script src="/web/20210531035112js_/https://www.governor.ny.gov/sites/default/files/js/js_PfCysx6dk-59Z_UpAEDYzUuhcvwJQnnPm9QziA0yGEw.js"></script>
+<script src="/web/20210531035112js_/https://www.governor.ny.gov/profiles/contrib/nygov/modules/custom/nygov_core/js/exitModal.js?v=1.x"></script>
+
+
+          <div id="nygov-universal-footer" class="nygov-universal-container">
+        <noscript>
+            <iframe id="nygov-universal-footer-frame" class="nygov-universal-container" width="100%" height="200px" src="//web.archive.org/web/20210531035112if_/https://static-assets.ny.gov/load_global_footer/ajax?iframe=true" data-updated="2014-11-07 08:30" frameborder="0" style="border:none; overflow:hidden; width:100%; height:200px;" scrolling="no">
+                Your browser does not support iFrames
+            </iframe>
+        </noscript>
+      </div>
+    
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"5246b5e79c","applicationID":"467331528","transactionName":"ZlVXNkcACxFVUEcNXF8fdAFBCAoMG3dBEUNQXGkMWgUAPndcXRBBXlxZB0c9Kw1QVmUNVkZzWgxBEwoOWFZBSQ1HWVAV","queueTime":0,"applicationTime":820,"atts":"ShJUQA8aGB8=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html><!--
+     FILE ARCHIVED ON 03:51:12 May 31, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:51:28 May 31, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 126.29 (3)
+  exclusion.robots.policy: 0.297
+  RedisCDXSource: 0.994
+  esindex: 0.01
+  PetaboxLoader3.datanode: 79.593 (3)
+  load_resource: 41.153
+  exclusion.robots: 0.307
+  CDXLines.iter: 36.74 (3)
+  captures_list: 190.274
+-->
